@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.container-min{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header#header{
+    width: 100%;
+    height: 50px;
+}
+header#header header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
