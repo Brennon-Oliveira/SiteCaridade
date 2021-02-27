@@ -1,3 +1,51 @@
+:root 
+{
+  --black:#0C0C0C;
+  --blue: #0D5FEB;
+  --gray-bg:#2B2E32;
+  --gray-title: #464555;
+  --red:#FF4E68;
+  --white-bg:#FAF7FF;
+  --white-text:#C9C9C9;
+  --white-title:#F9F8FF;
+  --white:#FFFFFF;
+}
+
+*
+{
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container
+{
+  max-width: 1280px;
+}
+
+.container-min
+{
+  max-width: 900px;
+}
+
+.container, .container-min
+{
+  margin: 0 auto;
+  padding: 0 2%;
+  width: 100%;
+}
+
+h1, h2, h3, h4, 
+a, button, input, 
+p, span 
+{
+  font-family: "Fira Sans"
+}
+
 .grid-container
 {
   display: grid;
@@ -21,21 +69,45 @@
   gap: 0 0;
   grid-template-areas: "logotipo logotipo menu menu";
   grid-area: barra-de-navegacao;
+  margin: 0 auto;
+  padding: 17px;
 }
 
-.logotipo
+.barra-de-navegacao .logotipo
 {
   grid-area: logotipo;
 }
 
-.menu
+.barra-de-navegacao .menu
 {
   grid-area: menu;
 }
 
+.barra-de-navegacao .menu ul
+{
+  display: flex;
+}
+
+.barra-de-navegacao .menu ul li
+{
+  font-size: 28px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .inicio
 {
+  background: url("../assets/images/banner.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
   grid-area: inicio;
+}
+
+.inicio .container p
+{
+  font-size: 46px;
+  margin-top: 167px;
 }
 
 .sobre
@@ -61,4 +133,20 @@
 .creditos
 {
   grid-area: creditos;
+}
+
+@media (max-width: 1080px)
+{
+  html 
+  {
+      font-size: 93.75%;
+  }
+}
+
+@media screen and (max-width: 720px)
+{
+  html 
+  {
+      font-size: 87.5%;
+  }
 }
