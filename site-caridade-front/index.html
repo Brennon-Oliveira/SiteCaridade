@@ -38,89 +38,85 @@
         </div>
     </header>
 
-    <section class="sobre">
-        <div class="container">
+    <section id="sobre">
+        <div class="container-min">
 
-            <h2>Sobre</h2>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices eget metus ut ultricies. Vestibulum convallis aliquam tellus ac suscipit. Maecenas luctus, ex in rhoncus scelerisque, massa lacus maximus massa, non imperdiet risus turpis id magna. Proin rhoncus eget eros quis eleifend. Donec tempus mattis dui, vitae vestibulum nisi lacinia at. Nam nec sapien pellentesque, porta massa et, vestibulum elit. Curabitur a facilisis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                
-                <p>Fusce rhoncus sed ex et maximus. In hac habitasse platea dictumst. Vivamus aliquet ante eu dui scelerisque, eu ultricies nibh volutpat. Aenean fringilla risus nunc, imperdiet ornare arcu euismod vel. Nam luctus ac elit et congue. Vestibulum augue leo, sollicitudin at tellus at, tincidunt cursus tortor. Nam viverra est vel iaculis vestibulum.</p>
-                
-            </div>
+            <h2 class="titulo">Sobre</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices eget metus ut ultricies. Vestibulum convallis aliquam tellus ac suscipit. Maecenas luctus, ex in rhoncus scelerisque, massa lacus maximus massa, non imperdiet risus turpis id magna. Proin rhoncus eget eros quis eleifend. Donec tempus mattis dui, vitae vestibulum nisi lacinia at. Nam nec sapien pellentesque, porta massa et, vestibulum elit. Curabitur a facilisis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            <p>Fusce rhoncus sed ex et maximus. In hac habitasse platea dictumst. Vivamus aliquet ante eu dui scelerisque, eu ultricies nibh volutpat. Aenean fringilla risus nunc, imperdiet ornare arcu euismod vel. Nam luctus ac elit et congue. Vestibulum augue leo, sollicitudin at tellus at, tincidunt cursus tortor. Nam viverra est vel iaculis vestibulum.</p>
 
         </div>
     </section>
-    <section class="como-nos-ajudar">
-        <div class="container">
+    <section id="como-nos-ajudar">
+        <div class="container-min">
 
-                <h2>Como nos ajudar</h2>
+            <h2 class="titulo">Como nos ajudar</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices eget metus ut ultricies. Vestibulum convallis aliquam tellus ac suscipit. Maecenas luctus, ex in rhoncus scelerisque, massa lacus maximus massa, non imperdiet risus turpis id magna. Proin rhoncus eget eros quis eleifend. Donec tempus mattis dui, vitae vestibulum nisi lacinia at. Nam nec sapien pellentesque, porta massa et, vestibulum elit. Curabitur a facilisis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             
-            <p>quis eleifend. Donec tempus mattis dui, vitae vestibulum nisi lacinia at. Nam nec sapien pellentesque, porta massa et, vestibulum elit. Curabitur a facilisis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            <p>Morbi ullamcorper, mi at dignissim faucibus, orci erat hendrerit nulla, et feugiat lacus massa quis libero. Curabitur ante dolor, vulputate et accumsan ac, rhoncus id arcu. Proin eu ipsum porttitor, porttitor ex et, aliquam sem. Sed eget cursus elit. Proin elit libero, semper pretium congue et, ullamcorper vel sem. Duis pulvinar accumsan condimentum. Donec id risus vel velit commodo sagittis. Aenean ac dolor mauris.</p>
             
-            <input type="button" value="Doar" name="acao" />
+            <div><a href="">Doar</a></div>
             
         </div>
     </section>
 
-    <section class="entre-em-contato">
+    <section id="entre-em-contato">
 
-        <div class="container">
-            <form id="msform">
+        <div class="container-min">
+            <form id="msform" method="post">
                 <!-- progressbar -->
                 <!-- fieldsets -->
                 <fieldset>
-                    <h2>Entre em contato</h2>
-                  <input type="text" name="email" placeholder="Nome..." />
-                  <input type="email" name="pass" placeholder="Email..." required />
-                  <input type="tel" name="cpass" placeholder="Telefone..." />
-                  <input type="button" name="enviar" class="next action-button" value="Enviar" />
+                    <h2 class="titulo">Entre em contato</h2>
+                    <input type="text" name="name" placeholder="Nome..." required/>
+                    <input type="email" name="email" placeholder="Email..." required />
+                    <input type="text" name="number" placeholder="Telefone..." required/>
+                    <textarea name="message" placeholder="Mensagem..."></textarea>
+                    <input type="submit" name="action" class="action-button" value="Enviar!" />
                 </fieldset>
-                <fieldset>
-                  
               </form>
         </div>
-
     </section>
 
-    <section class="emcima-do-footer">
+    <section id="top-footer">
         <div class="container">
-            <div class="rodape">
-
-                <div class="mapa-do-site">
-                    <h4 style="font-size: 31px;">Mapa do site</h4>
-                    <ul>
-                        <li>Home</li>
-                        <li>Entrar</li>
-                        <li>Sobre</li>
-                        <li>Contato</li>
-                        <li>Doar</li>
-                    </ul>
-                    <div class="clear" style="clear: both;"></div>
-                </div>
-                <div class="redes-sociais">
-                    <h4>Redes sociais</h4>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-whatsapp-square"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="endereço">
-                    <h4 style="font-size: 31px; margin-bottom: 7px;">Endereço</h4>
-                    <p>Rodovia BR 376 - Km 502</p>
-                    <p>Ponta Grossa/PR</p>
-                    <p>CEP 84043-450</p>
-                </div>
+            <div class="mapa-do-site">
+                <h3>Mapa do site</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Entrar</a></li><br />
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li><br />
+                    <li><a href="">Doar</a></li>
+                </ul>
+                <div class="clear" style="clear: both;"></div>
+            </div>
+            <div class="redes-sociais">
+                <h3>Redes sociais</h3>
+                <ul>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li><br />
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="endereco">
+                <h3>Endereço</h3>
+                <p>Rodovia BR 376 - Km 502</p>
+                <p>Ponta Grossa/PR</p>
+                <p>CEP 84043-450</p>
             </div>
         </div>
     </section>
-    <footer>
-        <p>Copyright © Centro de Treinamento Hilbert - 2019</p>
-        <p class="pp">Desenvolvido por: Brennon,Cotao,Gustavo</p>
+    <footer id="footer">
+        <div class="container">
+            <p>Copyright © Centro de Treinamento Hilbert - 2019</p>
+            <p><a href="">Conheça os desenvolvedores</a></p>
+        </div>
     </footer>
     
 </body>
