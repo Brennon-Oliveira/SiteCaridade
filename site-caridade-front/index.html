@@ -54,7 +54,7 @@
     <section class="como-nos-ajudar">
         <div class="container">
 
-                <h2>Como nos ajudar</h2>
+                <legend>Como nos ajudar</legend>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices eget metus ut ultricies. Vestibulum convallis aliquam tellus ac suscipit. Maecenas luctus, ex in rhoncus scelerisque, massa lacus maximus massa, non imperdiet risus turpis id magna. Proin rhoncus eget eros quis eleifend. Donec tempus mattis dui, vitae vestibulum nisi lacinia at. Nam nec sapien pellentesque, porta massa et, vestibulum elit. Curabitur a facilisis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             
@@ -72,10 +72,11 @@
                 <!-- progressbar -->
                 <!-- fieldsets -->
                 <fieldset>
-                    <h2>Entre em contato</h2>
-                  <input type="text" name="email" placeholder="Nome..." />
-                  <input type="email" name="pass" placeholder="Email..." required />
-                  <input type="tel" name="cpass" placeholder="Telefone..." />
+                    <legend>Entre em contato</legend>
+                  <label for="name"><input type="text" name="email" placeholder="Nome..." required /></label>
+                  <label for="email"><input type="email" name="pass" placeholder="Email..." required /></label>
+                  <label for="number"><input type="tel" name="cpass" placeholder="Telefone..." /></label>
+                  <label for="message"><textarea name="message" id="message" placeholder="Mensagem..."></textarea></label>
                   <input type="button" name="enviar" class="next action-button" value="Enviar" />
                 </fieldset>
                 <fieldset>
