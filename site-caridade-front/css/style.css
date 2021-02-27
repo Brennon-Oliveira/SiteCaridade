@@ -113,7 +113,7 @@ header#header header
     font-size: 22px;
     text-align: left;
     flex-direction: column;
-    padding: 0 12%;
+    padding: 0 14%;
     font-weight: 300;
 }
 
@@ -130,7 +130,7 @@ header#header header
     background-size: auto, cover;
     display: block;
     height: auto;
-    padding: 20px 12%;
+    padding: 20px 14%;
     text-align: left;
     width: 100%;
     font-weight: 300;
@@ -147,7 +147,7 @@ header#header header
     opacity: 1;
     padding: 10px;
     margin-left: 45%;
-    margin-top: 65px;
+    margin-top: 50px;
     cursor: pointer;
 }
 
