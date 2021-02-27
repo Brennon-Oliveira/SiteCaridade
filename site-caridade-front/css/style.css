@@ -134,6 +134,7 @@ header#header {
     text-align: center;
     margin-bottom: 20px;
     font-size: 40px;
+    font-weight: ;
 }
 
 .sobre .text{
@@ -268,17 +269,7 @@ header#header {
 	border-radius: 3px;
 	margin: 0 auto 5px auto;
 }
-/*progressbar connectors*/
-#progressbar li:after {
-	content: '';
-	width: 100%;
-	height: 2px;
-	background: white;
-	position: absolute;
-	left: -50%;
-	top: 9px;
-	z-index: -1; /*put it behind the numbers*/
-}
+
 #progressbar li:first-child:after {
 	/*connector not needed before the first step*/
 	content: none; 
@@ -336,7 +327,7 @@ header#header {
     margin: 0 auto;
     padding: 2% 2%;
     text-align: left;
-    width: 33.3%;
+    width: 30%;
 }
 
 .redes-sociais h4{
@@ -346,7 +337,7 @@ header#header {
 .redes-sociais i{
     text-align: left;
     padding: 2% 2%;
-    font-size: 82px;
+    font-size: 70px;
     flex-wrap: wrap;
 }
 
@@ -374,5 +365,5 @@ footer{
 
 .pp{
     float: right;
-    margin-left: 34%;
+    margin-left: 30%;
 }
