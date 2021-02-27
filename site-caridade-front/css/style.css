@@ -172,8 +172,9 @@ header#header {
     border-radius: 10px;
     opacity: 1;
     padding: 20px 30px;
-    margin-left: 40%;
-    margin-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -200,7 +201,7 @@ header#header {
 	background: white;
 	border: 0 none;
 	border-radius: 3px;
-	padding: 10px 20px;
+	padding: 1% 2%;
 	box-sizing: border-box;
 	width: 80%;
 	margin: 0 10%;
@@ -214,7 +215,7 @@ header#header {
 }
 /*inputs*/
 #msform input, #msform textarea {
-	padding: 15px;
+	padding: 2%;
 	border: 1px solid var(--black);
 	border-radius: 3px;
 	margin-bottom: 10px;
@@ -234,22 +235,11 @@ header#header {
     font-size: 20px;
 	cursor: pointer;
 	padding: 10px 5px;
-	margin: 20px 5px;
+	margin: 0 auto;
 }
 
-/*headings*/
-.fs-title {
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #2C3E50;
-	margin-bottom: 10px;
-}
-.fs-subtitle {
-	font-weight: normal;
-	font-size: 13px;
-	color: #666;
-	margin-bottom: 20px;
-}
+
+
 /*progressbar*/
 #progressbar {
 	margin-bottom: 30px;
@@ -298,4 +288,91 @@ header#header {
 #progressbar li.active:before,  #progressbar li.active:after{
 	background: #27AE60;
 	color: white;
+}
+
+.emcima-do-footer > .container{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+}
+
+.emcima-do-footer{
+    background-color: var(--gray-bg);
+    width: 100%;
+}
+
+.rodape{
+    display: flex;
+    background-color: var(--gray-bg) !important;
+    color: white;
+}
+
+.mapa-do-site{
+    padding: 2% 2%;
+    font-size: 28px;
+    width: 20%;
+    text-align: left;
+    justify-content: left;
+}
+
+.mapa-do-site ul{
+    padding: 2%;
+}
+
+.mapa-do-site h4{
+    padding-left: 5%;
+    white-space: nowrap;
+}
+
+.mapa-do-site ul li{
+    margin: 2% 4%;
+    float: left;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.redes-sociais{
+    margin: 0 auto;
+    padding: 2% 2%;
+    text-align: left;
+    width: 33.3%;
+}
+
+.redes-sociais h4{
+    font-size: 28px;
+}
+
+.redes-sociais i{
+    text-align: left;
+    padding: 2% 2%;
+    font-size: 82px;
+    flex-wrap: wrap;
+}
+
+.endereço{
+    font-size: 27px;
+    text-align: left;
+    padding: 2% 2%;
+}
+
+.endereço p{
+    margin-bottom: 10px;
+}
+
+.emcima-do-footer > .container{
+    margin: 0 auto !important;
+}
+
+footer{
+    font-size: 20px;
+    display: flex;
+    padding: 2% 2%;
+    background-color: var(--black);
+    color: white;
+}
+
+.pp{
+    float: right;
+    margin-left: 34%;
 }
