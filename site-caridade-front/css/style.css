@@ -5,6 +5,7 @@
     outline: none;
     text-decoration: none;
     list-style: none;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 :root {
@@ -104,6 +105,8 @@ header#header header
 
 .sobre h2{
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .sobre .text{
@@ -126,11 +129,12 @@ header#header header
     background-repeat: no-repeat, no-repeat;
     background-size: auto, cover;
     display: block;
-    font-size: 18px;
-    height: 641px;
+    height: auto;
     padding: 20px 12%;
     text-align: left;
     width: 100%;
+    font-weight: 300;
+    font-size: 22px;
 }
 
 .como-nos-ajudar input[type=button]
@@ -142,7 +146,13 @@ header#header header
     border-radius: 10px;
     opacity: 1;
     padding: 10px;
-    margin-left: 40%;
+    margin-left: 45%;
     margin-top: 65px;
     cursor: pointer;
+}
+
+.como-nos-ajudar h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
