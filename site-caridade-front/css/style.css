@@ -59,7 +59,13 @@ p, span {font-family:'Open Sans';}
     padding: 0 2%;
 }
 
-/* Imagem distorcida... */
+h2.titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Inicio do site */
 header#header {
     height:100vh;
     width:100%;
@@ -123,43 +129,29 @@ header#header {
     font-size: 2rem;
 }
 
-.sobre, .como-nos-ajudar
+#sobre, #como-nos-ajudar
 {
     display: flex;
     background-color: var(--black);
     width: 100%;
-    height: auto;
-    position: relative;
     color: var(--white);
-    padding: 20px 2%;
+    padding: 40px 0;
 }
 
-.sobre h2{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-weight: ;
-}
-
-.sobre .text{
-    font-size: 22px;
-    text-align: left;
-    flex-direction: column;
-    padding: 0 14%;
-    font-weight: 300;
-}
-
-.sobre .text p, .como-nos-ajudar p
+#sobre p, #como-nos-ajudar p
 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    color: var(--white-text);
 }
 
-.como-nos-ajudar
+#como-nos-ajudar
 {
-    background: linear-gradient(#000000a4, #000000), url('../images/cdc-GDokEYnOfnE-unsplash.png');
+    background: linear-gradient(#000000e3, #000000d6), url('../images/criancas.png');
     background-position: unset, center center;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, cover;
+<<<<<<< HEAD
     display: block;
     height: auto;
     text-align: left;
@@ -168,65 +160,71 @@ header#header {
     padding-right: 15%;
     font-weight: 300;
     font-size: 22px;
+=======
+>>>>>>> ec521394157fefeb2f302b5b4ffc7003e306163b
 }
 
-.como-nos-ajudar input[type=button]
+#como-nos-ajudar .container-min div
+{
+    text-align: center;
+}
+
+#como-nos-ajudar .container-min div a
 {
     background-color: transparent;
-    color: white;
-    border: 2px solid #F9F8FF;
-    font-size: 40px;   
+    color: var(--white);
+    border: 2px solid var(--white-title);
+    font-size: 2rem; 
     border-radius: 10px;
-    opacity: 1;
-    padding: 20px 30px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    transition: font-size .4s, filter .4s;
 }
 
+<<<<<<< HEAD
 .como-nos-ajudar legend{
     text-align: center;
     margin-bottom: 20px;
     font-size: 40px;
+=======
+#como-nos-ajudar .container-min div a:hover {
+    filter: brightness(85%);
+    font-size: 2.25rem;
+>>>>>>> ec521394157fefeb2f302b5b4ffc7003e306163b
 }
 
+#entre-em-contato {
+    padding: 40px 0;
+    background-color: var(--white-bg);
+}
 
 #msform {
-	width: 80%;
-	margin: 50px auto;
+	width: 100%;
 	text-align: center;
+<<<<<<< HEAD
 	position: relative;
 }
 
 #msform legend{
     margin-bottom: 40px;
     font-size: 30px;
+=======
+>>>>>>> ec521394157fefeb2f302b5b4ffc7003e306163b
 }
 
 #msform fieldset {
-	background: white;
-	border: 0 none;
-	border-radius: 3px;
-	padding: 1% 2%;
-	box-sizing: border-box;
-	width: 80%;
-	margin: 0 10%;
-	
-	/*stacking fieldsets above each other*/
-	position: relative;
-}
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
-	display: none;
+	border: 0;
 }
 /*inputs*/
-#msform input, #msform textarea {
-	padding: 2%;
+#msform input:not([type=submit]), #msform textarea {
+	padding-left: 8px;
+    height: 42px;
+    line-height: 42px;
 	border: 1px solid var(--black);
 	border-radius: 3px;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 	width: 100%;
+<<<<<<< HEAD
     height: 20%;
 	box-sizing: border-box;
 	font-weight: 400;
@@ -238,144 +236,131 @@ header#header {
     resize: none;
 }
 /*buttons*/
+=======
+	font-weight: 300;
+	color: var(--black);
+    font-size: 1rem;
+}
+#msform textarea {
+    padding: 8px;
+    min-height: 120px;
+    height: 150px;
+    max-height: 180px;
+    resize: vertical;
+    line-height: normal;
+}
+>>>>>>> ec521394157fefeb2f302b5b4ffc7003e306163b
 #msform .action-button {
 	width: 300px;
-	background: #000000;
-	font-weight: bold;
-	color: white;
+	background: var(--black);
+	color: var(--white);
 	border: 0 none;
 	border-radius: 1px;
     font-size: 20px;
 	cursor: pointer;
-	padding: 10px 5px;
-	margin: 0 auto;
+	padding: 0.80rem 2%;
 }
 
-
-
-/*progressbar*/
-#progressbar {
-	margin-bottom: 30px;
-	overflow: hidden;
-	/*CSS counters to number the steps*/
-	counter-reset: step;
-}
-#progressbar li {
-	list-style-type: none;
-	color: white;
-	text-transform: uppercase;
-	font-size: 9px;
-	width: 33.33%;
-	float: left;
-	position: relative;
-}
-#progressbar li:before {
-	content: counter(step);
-	counter-increment: step;
-	width: 20px;
-	line-height: 20px;
-	display: block;
-	font-size: 10px;
-	color: #333;
-	background: white;
-	border-radius: 3px;
-	margin: 0 auto 5px auto;
-}
-
-#progressbar li:first-child:after {
-	/*connector not needed before the first step*/
-	content: none; 
-}
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
-	background: #27AE60;
-	color: white;
-}
-
-.emcima-do-footer > .container{
-    padding: 0;
-    margin: 0;
-    border: 0;
-    width: 100%;
-}
-
-.emcima-do-footer{
+#msform .action-button:hover {
     background-color: var(--gray-bg);
-    width: 100%;
 }
 
-.rodape{
+/* INICIO DO FOOTER */
+
+#top-footer {
+    background-color: var(--gray-bg);
+    padding: 40px 0;
+}
+
+#top-footer .container {
     display: flex;
-    background-color: var(--gray-bg) !important;
-    color: white;
+    flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 .mapa-do-site{
     padding: 2% 2%;
     font-size: 28px;
     width: 26%;
     text-align: left;
     justify-content: left;
+=======
+#top-footer .container > div {
+    width: 33.3%;
+>>>>>>> ec521394157fefeb2f302b5b4ffc7003e306163b
 }
 
-.mapa-do-site ul{
-    padding: 2%;
+#top-footer .container > div h3 {
+    font-size: 1.75rem;
+    color: var(--white);
+    margin-bottom: 1rem;
 }
 
-.mapa-do-site h4{
-    padding-left: 5%;
-    white-space: nowrap;
+#top-footer .mapa-do-site ul li {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
-.mapa-do-site ul li{
-    margin: 2% 4%;
-    float: left;
-    font-size: 27px;
-    cursor: pointer;
+#top-footer .mapa-do-site ul li a {
+    font-size: 1.25rem;
+    color: var(--white);
 }
 
-.redes-sociais{
-    margin: 0 auto;
-    padding: 2% 2%;
-    text-align: left;
-    width: 30%;
+#top-footer .mapa-do-site ul li a:hover {
+    text-decoration: underline;
 }
 
-.redes-sociais h4{
-    font-size: 28px;
+#top-footer .mapa-do-site ul li a::before{
+    content: '-';
 }
 
-.redes-sociais i{
-    text-align: left;
-    padding: 2% 2%;
-    font-size: 70px;
-    flex-wrap: wrap;
+#top-footer .redes-sociais ul li{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
-.endereço{
-    font-size: 27px;
-    text-align: left;
-    padding: 2% 2%;
+#top-footer .redes-sociais ul li a {
+    color: var(--white);
+    display: inline-block;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    text-align: center;
+    line-height: 60px;
+    transition: background-color .4s, color .4s;
 }
 
-.endereço p{
-    margin-bottom: 10px;
+#top-footer .redes-sociais ul li a:hover {
+    background-color: var(--white);
+    color: var(--black);
 }
 
-.emcima-do-footer > .container{
-    margin: 0 auto !important;
+#top-footer .endereco p {
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+    color: var(--white);
 }
 
-footer{
-    font-size: 20px;
-    display: flex;
-    padding: 2% 2%;
+#footer{
+    padding: 20px 0;
     background-color: var(--black);
-    color: white;
 }
 
-.pp{
-    float: right;
-    margin-left: 30%;
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer p, #footer a {
+    color:var(--white);
+    font-size: 1.25rem;
+}
+
+#footer a:hover {
+    text-decoration: underline;
 }
