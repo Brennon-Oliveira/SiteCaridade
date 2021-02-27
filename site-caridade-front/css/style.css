@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -25,9 +24,14 @@
         font-size: 93.75%;
     }
 }
-@media (max-width: 720px){
+@media screen and (max-width: 720px){
     html {
         font-size: 87.5%;
+    }
+
+    #header{
+        background-size: auto 100%;
+        min-height: 500px;
     }
 }
 
@@ -49,12 +53,19 @@ p, span {font-family:'Open Sans';}
     padding: 0 2%;
 }
 
-header#header{
+/* Imagem distorcida... */
+header#header
+{
     width: 100%;
-    height: 50px;
+    height: 1000px;
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-header#header header {
+header#header header 
+{
     display: flex;
     background-color: transparent;
     justify-content: space-between;
@@ -70,8 +81,6 @@ header#header header {
     margin-left: 1rem;
 }
 
-
-
 .msg{
     text-align: center;
    position: absolute;               
@@ -81,3 +90,59 @@ header#header header {
    transform: translate(0, -50%);
 }
 
+.sobre, .como-nos-ajudar
+{
+    display: flex;
+    background-color: var(--black);
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -340px;
+    color: var(--white);
+    padding: 20px 2%;
+}
+
+.sobre h2{
+    text-align: center;
+}
+
+.sobre .text{
+    font-size: 22px;
+    text-align: left;
+    flex-direction: column;
+    padding: 0 12%;
+    font-weight: 300;
+}
+
+.sobre .text p, .como-nos-ajudar p
+{
+    margin-bottom: 20px;
+}
+
+.como-nos-ajudar
+{
+    background: linear-gradient(#000000D4, #000000D4), url('../images/cdc-GDokEYnOfnE-unsplash.png');
+    background-position: unset, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    display: block;
+    font-size: 18px;
+    height: 641px;
+    padding: 20px 12%;
+    text-align: left;
+    width: 100%;
+}
+
+.como-nos-ajudar input[type=button]
+{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #F9F8FF;
+    font-size: 22px;   
+    border-radius: 10px;
+    opacity: 1;
+    padding: 10px;
+    margin-left: 40%;
+    margin-top: 65px;
+    cursor: pointer;
+}
