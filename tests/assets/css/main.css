@@ -4,49 +4,61 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 70px 780px 500px 640px 420px 300px 80px;
   gap: 0 0;
+  grid-template-areas: "barra-de-navegacao barra-de-navegacao barra-de-navegacao barra-de-navegacao"
+                       "inicio inicio inicio inicio"
+                       "sobre sobre sobre sobre"
+                       "como-nos-ajudar como-nos-ajudar como-nos-ajudar como-nos-ajudar"
+                       "contato contato contato contato"
+                       "rodape rodape rodape rodape"
+                       "creditos creditos creditos creditos";
 }
 
 .barra-de-navegacao
 {
-  grid-area: 1 / 1 / 2 / 5;
-}
-
-.inicio
-{
-  grid-area: 2 / 1 / 3 / 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: "logotipo logotipo menu menu";
+  grid-area: barra-de-navegacao;
 }
 
 .logotipo
 {
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: logotipo;
 }
 
 .menu
 {
-  grid-area: 1 / 3 / 2 / 5;
+  grid-area: menu;
+}
+
+.inicio
+{
+  grid-area: inicio;
 }
 
 .sobre
 {
-  grid-area: 3 / 1 / 4 / 5;
+  grid-area: sobre;
 }
 
 .como-nos-ajudar
 {
-  grid-area: 4 / 1 / 5 / 5;
+  grid-area: como-nos-ajudar;
 }
 
 .contato
 {
-  grid-area: 5 / 1 / 6 / 5;
+  grid-area: contato;
 }
 
 .rodape
 {
-  grid-area: 6 / 1 / 7 / 5;
+  grid-area: rodape;
 }
 
 .creditos
 {
-  grid-area: 7 / 1 / 8 / 5;
+  grid-area: creditos;
 }
