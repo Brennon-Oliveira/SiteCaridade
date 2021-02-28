@@ -14,6 +14,8 @@ html{
     background-color: white !important;
 }
 
+/* Daniel, não precisa mais copiar essas partes, porque o ficheiro global.css já tem essas partes */
+
 .container{
     max-width: 1280px;
     width: 100%;
@@ -42,6 +44,7 @@ html{
 .user-status{
     font-size: 24px;
     text-align: left;
+    margin-top: 1%;
     padding: 4% 10%;
     float: right;
 }
