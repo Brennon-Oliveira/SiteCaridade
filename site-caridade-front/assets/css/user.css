@@ -1,149 +1,117 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
-    background-color: white;
+p
+{
+    line-height: 1.5;
 }
 
-html{
-    background-color: white !important;
+.grid-container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 0;
+  grid-template-areas: "avatar avatar avatar avatar"
+                       "perfil perfil perfil perfil";
 }
 
-/* Daniel, não precisa mais copiar essas partes, porque o ficheiro global.css já tem essas partes */
+.avatar
+{
+  grid-area: avatar;
 
-.container{
-    max-width: 1280px;
+  align-content: baseline;
+  display: grid;
+  font-size: 32px;
+  font-weight: 300;
+  justify-items: center;
+  margin-top: 4%;
+}
+
+.avatar img
+{
+    border-radius: 2em; 
+    border: 1px solid var(--black);
+    width: 8%; 
+}
+
+.avatar h4
+{
+    padding-top: 20px;
+}
+
+.perfil
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: "descricao descricao status status";
+  grid-area: perfil;
+}
+
+.perfil .descricao h2,
+.perfil .status h2
+{
+  margin-bottom: 50px;
+}
+
+.perfil .descricao
+{
+  grid-area: descricao;
+
+  font-size: 24px;
+  padding: 4% 2%;
+}
+
+.perfil .status
+{
+  grid-area: status;
+
+  font-size: 24px;
+  padding: 4% 10%;
+  text-align: left;
+}
+
+.perfil .status h2
+{
+  list-style: none;
+}
+
+.perfil .status button
+{
+  color: white;
+  color: 24px;
+  background-color: #FF4E68;
+  border: 0;
+  cursor: pointer;
+  width: 162px;
+  height: 35px;
+  font-size: 24px;
+}
+
+@media (max-width: 1080px)
+{
+  .avatar
+  {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+  }
+
+  .descricao
+  {
     width: 100%;
     margin: 0 auto;
-    padding: 0 2%;
-}
+    order: 3;
+  }
 
-.user-profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    margin-top: 4%;
-    font-size: 32px;
-    font-weight: 300;
-    text-align: left;
-}
+  .descricao h2
+  {
+    text-align: center;
+  }
 
-
-.user-description{
-    font-size: 24px;
-    padding: 4% 2%;
-    width: 40%;
-    float: left;
-}
-
-.user-status{
-    font-size: 24px;
-    text-align: left;
-    margin-top: 1%;
-    padding: 4% 10%;
-    float: right;
-}
-
-.user-status h2{
-    list-style: none;
-}
-
-
-button{
-    color: white;
-    color: 24px;
-    background-color: #FF4E68;
-    border: 0;
-    cursor: pointer;
-    width: 162px;
-    height: 35px;
-    font-size: 24px;
-}
-
-h2{
-    margin-bottom: 50px;
-}
-
-
-
-@media (min-width: 1440px){
-    html {
-        font-size: 110%;
-    }
-}
-@media (min-width: 1800px){
-    html {
-        font-size: 140%;
-    }
-}
-@media (max-width: 1080px){
-    html {
-        font-size: 93.75%;
-    }
-
-    .user{
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
-
-    .user-description{
-        width: 100%;
-        margin: 0 auto;
-        order: 3;
-    }
-
-    .user-description h2{
-        text-align: center;
-    }
-
-
-    .user-status{
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-    }
-    
-}
-@media screen and (max-width: 720px){
-    html {
-        font-size: 87.5%;
-    }
-
-    #header{
-        background-size: auto 100%;
-        min-height: 500px;
-    }
-}
-
-@media (min-width: 1800px){
-    #top-footer .redes-sociais ul li a {
-        width: 80px;
-        height: 80px;
-        line-height: 80px;
-    }
-}
-
-@media screen and (max-width: 850px){
-    #top-footer >.container {
-        text-align: center;
-    }
-    #top-footer >.container > div{
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-    #footer .container{
-        flex-direction: column;
-    }
-
-    #footer .container p {
-        margin-bottom: 1rem;
-    }
-
+  .status
+  {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
