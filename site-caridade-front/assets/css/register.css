@@ -13,7 +13,6 @@ body
     height: 80%;
     background-color: #FFFFFF;
     background-clip: padding-box;
-    /*background-oringin faz a mesma coisa do clip mas tem q ser usada em imagens*/
 }
 
 .form h2
