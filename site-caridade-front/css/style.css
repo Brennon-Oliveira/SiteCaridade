@@ -35,6 +35,7 @@
     html {
         font-size: 93.75%;
     }
+    
 }
 @media screen and (max-width: 720px){
     html {
@@ -96,23 +97,64 @@ header#header {
     font-size:2.15rem;
 }
 
-#header header ul {
+#header header .desktop ul {
     display: flex;
     align-items: center;
 }
 
-#header header ul li {
+#header header .desktop ul li {
     margin-left: 2rem;
 }
 
-#header header ul li a {
+#header header .desktop ul li a {
     color: var(--black);
     font-size: 1.5rem;
     transition: font-size 1s;
 }
 
-#header header ul li a:hover {
+#header header .desktop ul li a:hover {
     font-size:1.8rem;
+}
+
+#header header .mobile {
+    display: none;
+}
+
+#header header .mobile ul {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background: var(--gray-bg);
+}
+
+#header header .mobile ul li a {
+    width: 100%;
+    padding: 1.25rem 0;
+    display: inline-block;
+    border-bottom: 1px solid var(--black);
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#header header .mobile ul li a:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+#header header .mobile i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px){
+    #header header .mobile {
+        display:block;
+    }
+    #header header .desktop {
+        display: none;
+    }
 }
 
 #header header ul li:nth-of-type(4) a {
@@ -327,4 +369,22 @@ header#header {
         height: 80px;
         line-height: 80px;
     }
+}
+
+@media screen and (max-width: 850px){
+    #top-footer >.container {
+        text-align: center;
+    }
+    #top-footer >.container > div{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    #footer .container{
+        flex-direction: column;
+    }
+
+    #footer .container p {
+        margin-bottom: 1rem;
+    }
+
 }

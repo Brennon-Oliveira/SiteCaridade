@@ -13,6 +13,10 @@
     <meta name="keywords" content="">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/menuMobile.js"></script>
+    <!---->
     <title>Site Caridade</title>
 </head>
 <body>
@@ -22,8 +26,19 @@
                 <div class="logo">
                     <h2><a href="">Projeto Caridade</a></h2>
                 </div>
-                <nav>
+                <nav class="desktop">
                     <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Doar</a></li>
+                        <li><a href="">Entrar</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="mobile">
+                    <i id='menuMobileBtn' class="fas fa-bars"></i>
+                    <ul id="menuMobileContent">
                         <li><a href="">Home</a></li>
                         <li><a href="">Sobre</a></li>
                         <li><a href="">Contato</a></li>
