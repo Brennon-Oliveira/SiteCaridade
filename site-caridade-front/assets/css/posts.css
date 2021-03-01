@@ -1,0 +1,47 @@
+@font-face
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+} 
+
+.search {
+    width: 20%;
+    position: relative;
+    display: flex;
+}
+  
+  .searchTerm {
+    width: 100%;
+    border: 1px solid black;
+    border-right: none;
+    padding: 17px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: white;
+  }
+  
+.searchTerm:focus{
+    color: black;
+}
+  
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
