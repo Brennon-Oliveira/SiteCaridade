@@ -79,10 +79,17 @@
 }
 
 @media screen and (max-width:900px){
+  .avatar img{
+    width: 15%;
+  }
   .perfil {
     flex-direction: column-reverse;
     width: 100%;
     text-align: center;
+  }
+  
+  .perfil .descricao p{
+    text-align: left;
   }
 
   .perfil div {
