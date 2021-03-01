@@ -1,114 +1,139 @@
+/* Daniel, não precisas colocar * e .container, porque já estão no ficheiro global.css */
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.grid-container
+{
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas: "search posts posts posts"
+                       "search posts posts posts"
+                       "search posts posts posts";
+  border-left: 1px solid var(--black);
+  border-right: 1px solid var(--black);
+  border-top: 1px solid var(--black);
 }
 
-.container{
-    max-width: 1280px;
-    margin: 0 auto;
+.search
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas: "search-box search-box search-box"
+                       "classify classify classify";
+  grid-area: search;
+  border-right: 1px solid var(--black);
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.search h2
+{
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.search .search-box
+{
+  grid-area: search-box;
+
+  display: grid;
+  align-content: end;
+
+  padding-bottom: 25px;
+}
+
+.search .search-box input,
+.search .classify input
+{
+  border: 1px solid black;
+  color: var(--black);
+  font-size: 18px;
+  height: 20px;
+  outline: none;
+  padding: 17px 2%;
+  width: 100%;
+}
+
+.search .search-box input:hover
+{
+  background-color: var(--light-grey);
+  transition: 0.6s;
+}
+
+.search .search-box .fontawesome 
+{ 
+    position: relative; 
 } 
-
-.search {
-    margin: 0 auto;
-    width: 80%;
-    position: relative;
-    display: flex;
-    font-size: 18px;
-    padding-bottom: 20%;
-}
-  
-  .searchTerm {
-    width: 80%;
-    border: 1px solid black;
-    border-right: none;
-    padding: 17px 2%;
-    font-size: 18px;
-    height: 20px;
-    outline: none;
-    color: black;
-    border: 1px solid black;
-
-  }
-
-  .searchButton:hover{
-      background-color: #ccc;
-      transition: 0.6s;
-  }
-  
-  
-.searchButton {
-    width: 40px;
-    height: 36px;
-    text-align: center;
-    border-radius: 0 5px 5px 0;
+    
+.search .search-box .fontawesome button
+{
+    background: transparent;
+    border: 0;
     cursor: pointer;
     font-size: 20px;
-    border: 0;
-    background-color: white;
+    position: absolute; 
+    left: 260px; 
+    top: 10px; 
+    color: var(--black);
+    opacity: 1;
+} 
+
+.search .search-box .fontawesome button:hover
+{
+  background: transparent;
 }
 
-.classificar{
-    padding: 0.4em;
-    border: 1px solid black;
-    font-size: 18px;
-    width: 80%;
-    height: 38px;
+.search .classify
+{
+  grid-area: classify;
+  padding-top: 25px;
 }
 
-.nav-bar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: 300px;
-    height: 100%;
-    border-right: 2px solid black;
-    overflow: vertical;
-    padding: 12% 0;
+.search .classify button
+{
+  background-color: var(--black);
+  border: none;
+  color: var(--white);
+  font-size: 22px;
+  height: 38px;
+  margin-top: 20px;
+  outline: none;
+  width: 100%;
 }
 
-.nav-bar input, h2{
-    margin-top: 10%;
+.posts
+{
+  grid-area: posts;
+  margin: 30px;
 }
 
-.filtrar{
-    width: 80%;
-    height: 38px;
-    font-size: 22px;
-    margin-top: 20px;
+.posts .post-single
+{
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  padding: 2%;
+  width: 100%;
 }
 
-.posts{
-    margin-left: 30%;
+.posts .post-single img
+{
+ border-radius: 50%; 
+ border: 1px solid var(--black);
+ width: 115px; 
 }
 
-
-.post-single{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 2%;
-    margin: 20px;
-    max-width: 700px;
-    border: 1px solid black;
+.posts .post-single .text-post
+{
+  flex: 1;
+  margin-left: 1rem;
 }
 
-
-.text-post{
-    flex: 1;
-    margin-left: 1rem;
+.posts .post-single .text-post h2
+{
+  margin-bottom: 20px;
 }
-
-.text-post h2{
-    margin: 0;
-}
-
-
-
-
-
-
-
