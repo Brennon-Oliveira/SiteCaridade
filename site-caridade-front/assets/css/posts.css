@@ -210,6 +210,13 @@
 
 }
 
+/* Google Pixel 2 */
+/* Google Pixel 2 XL */
+@media only screen and (max-width: 411px)
+{
+
+}
+
 /* iPhone 6/7/8 */
 /* iPhone X/XS */
 @media only screen and (max-width: 375px)
@@ -240,8 +247,7 @@
   }
 }
 
-/* Nokia 8110 4G */
-@media only screen and (max-width: 240px)
+@media only screen and (max-width: 280px)
 {
   .search
   {
@@ -250,11 +256,20 @@
 
   .search .search-box .fontawesome button 
   {
-     left: 175px;
+     left: 215px;
   }
 
   .posts
   {
     margin: 10px;
+  }
+}
+
+/* Nokia 8110 4G */
+@media only screen and (max-width: 240px)
+{
+  .search .search-box .fontawesome button 
+  {
+     left: 175px;
   }
 }
