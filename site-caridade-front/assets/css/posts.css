@@ -140,6 +140,8 @@
   text-align: center;
 }
 
+/* iPhone 6/7/8+ */
+/* Samsung Galaxy Note 9 */
 @media only screen and (max-width: 414px)
 {
   .grid-container 
@@ -214,6 +216,15 @@
 {
   .search .search-box .fontawesome button 
   {
-     left: 225;
+     left: 225px;
+  }
+}
+
+/* iPhone 5/5E */
+@media only screen and (max-width: 320px)
+{
+  .search .search-box .fontawesome button 
+  {
+     left: 185px;
   }
 }
