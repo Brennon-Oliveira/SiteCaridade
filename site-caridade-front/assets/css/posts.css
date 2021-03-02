@@ -199,10 +199,21 @@
   }
 }
 
+/* iPhone 6/7/8 */
+/* iPhone X/XS */
 @media only screen and (max-width: 375px)
 {
   .search .search-box .fontawesome button 
   {
      left: 240px;
+  }
+}
+
+/* Samsung Galaxy S9/S9+ */
+@media only screen and (max-width: 360px)
+{
+  .search .search-box .fontawesome button 
+  {
+     left: 225;
   }
 }
