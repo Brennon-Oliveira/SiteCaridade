@@ -140,11 +140,27 @@
   text-align: center;
 }
 
-/* iPhone 6/7/8+ */
-/* iPhone XR */
-/* iPhone XS Max */
-/* Samsung Galaxy Note 9 */
-@media only screen and (max-width: 414px)
+@media only screen and (min-width: 2560px)
+{
+
+}
+
+@media only screen and (min-width: 1920px)
+{
+
+}
+
+@media only screen and (max-width: 1440px)
+{
+  
+}
+
+@media only screen and (max-width: 1024px)
+{
+  
+}
+
+@media only screen and (max-width: 800px)
 {
   .grid-container 
   {
@@ -173,7 +189,7 @@
 
   .search .search-box .fontawesome button 
   {
-     left: 270px;
+     left: 640px;
   }
 
   .classify 
@@ -203,6 +219,50 @@
   }
 }
 
+@media only screen and (max-width: 780px)
+{
+  .search .search-box .fontawesome button 
+  {
+     left: 620px;
+  }
+}
+
+@media only screen and (max-width: 640px)
+{
+  .search .search-box .fontawesome button 
+  {
+     left: 490px;
+  }
+}
+
+@media only screen and (max-width: 540px)
+{
+  .search .search-box .fontawesome button 
+  {
+     left: 390px;
+  }
+}
+
+@media only screen and (max-width: 425px)
+{
+  .search .search-box .fontawesome button 
+  {
+     left: 280px;
+  }
+}
+
+/* iPhone 6/7/8+ */
+/* iPhone XR */
+/* iPhone XS Max */
+/* Samsung Galaxy Note 9 */
+@media only screen and (max-width: 414px)
+{
+  .search .search-box .fontawesome button 
+  {
+     left: 270px;
+  }
+}
+
 /* Google Nexus 5X */
 /* Google Nexus 6P */
 @media only screen and (max-width: 412px)
@@ -217,14 +277,28 @@
 
 }
 
-/* iPhone 6/7/8 */
-/* iPhone X/XS */
-@media only screen and (max-width: 375px)
+/* Xiaomi Redmi Note 7 – Portrato */
+@media only screen and (max-width: 395px)
+{
+  .search .search-box .fontawesome button 
+  {
+     left: 260px;
+  }
+}
+
+@media only screen and (max-width: 384px)
 {
   .search .search-box .fontawesome button 
   {
      left: 240px;
   }
+}
+
+/* iPhone 6/7/8 */
+/* iPhone X/XS */
+@media only screen and (max-width: 375px)
+{
+
 }
 
 /* Microsoft Lumia 550 */
