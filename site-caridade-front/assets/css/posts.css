@@ -141,6 +141,8 @@
 }
 
 /* iPhone 6/7/8+ */
+/* iPhone XR */
+/* iPhone XS Max */
 /* Samsung Galaxy Note 9 */
 @media only screen and (max-width: 414px)
 {
@@ -201,6 +203,13 @@
   }
 }
 
+/* Google Nexus 5X */
+/* Google Nexus 6P */
+@media only screen and (max-width: 412px)
+{
+
+}
+
 /* iPhone 6/7/8 */
 /* iPhone X/XS */
 @media only screen and (max-width: 375px)
@@ -211,6 +220,8 @@
   }
 }
 
+/* Microsoft Lumia 550 */
+/* Microsoft Lumia 950 */
 /* Samsung Galaxy S9/S9+ */
 @media only screen and (max-width: 360px)
 {
@@ -226,5 +237,24 @@
   .search .search-box .fontawesome button 
   {
      left: 185px;
+  }
+}
+
+/* Nokia 8110 4G */
+@media only screen and (max-width: 240px)
+{
+  .search
+  {
+    padding: 10px;
+  }
+
+  .search .search-box .fontawesome button 
+  {
+     left: 175px;
+  }
+
+  .posts
+  {
+    margin: 10px;
   }
 }
