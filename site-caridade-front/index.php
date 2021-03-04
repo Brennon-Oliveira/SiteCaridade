@@ -19,23 +19,15 @@
     <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="assets/css/global.css">
     <?php
-        switch ($url) {
-            case 'home':
-                echo '<link rel="stylesheet" type="text/css" href="assets/css/index.css">';
-            break;
-            case 'cadastrar':
-                echo '<link rel="stylesheet" type="text/css" href="assets/css/register.css">';
-            break;
-            case 'login':
-                echo '<link rel="stylesheet" type="text/css" href="assets/css/register.css">';
-            break;
-            case 'usuario':
-                echo '<link rel="stylesheet" type="text/css" href="assets/css/user.css">';
-            break;
-            case 'posts':
-                echo '<link rel="stylesheet" type="text/css" href="assets/css/posts.css">';
-            break;
-        }
+    if($url == 'home' || $url == 'sobre' || $url =='contato'){
+        echo '<link rel="stylesheet" type="text/css" href="assets/css/index.css">';
+    } else if($url == 'cadastrar' || $url =='login'){
+        echo '<link rel="stylesheet" type="text/css" href="assets/css/register.css">';
+    }else if($url == 'usuario'){
+        echo '<link rel="stylesheet" type="text/css" href="assets/css/user.css">';
+    }else if($url == 'posts'){
+        echo '<link rel="stylesheet" type="text/css" href="assets/css/posts.css">';
+    }
     ?>
     <title>Site Caridade</title>
 </head>
@@ -60,15 +52,15 @@
     ?>
 
     <?php
-        if($url != 'cadastrar' && $url != 'login' && $url != 'home'){
-            include('pages/header.html');
+        if($url != 'cadastrar' && $url != 'login' && $url != 'home' && $url!='sobre' && $url!='contato'){
+            include('pages/header.php');
         }
     ?>
 
     <?php
         # verifica se existe um arquivo com o nome passado na url na pasta pages
-        if(file_exists('pages/'.$url.'.html')){
-            include('pages/'.$url.'.html');
+        if(file_exists('pages/'.$url.'.php')){
+            include('pages/'.$url.'.php');
             # caso aja, inclui esse arquivo
         } else {
             # caso não aja, detecta se é algum paramentro inPage 
@@ -78,19 +70,20 @@
                 // include('pages/404.php');
             } else {
                 # se for, inclui a home do site
-                include('pages/home.html');
+                include('pages/home.php');
             }
         }
     ?>
     
     <?php
         if($url != 'cadastrar' && $url != 'login'){
-            include('pages/footer.html');
+            include('pages/footer.php');
         }
     ?>
     
 
     <script src="assets/js/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/893c7682a5.js" crossorigin="anonymous"></script>
     <script src="assets/js/menuMobile.js"></script>
 </body>
 </html>

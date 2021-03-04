@@ -1,35 +1,29 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" type="text/css" href="../assets/css/colors.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/icons.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/fonts.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/global.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
-
 <header id='header-home'>
     <div class="container">
         <header>
             <div class="logo">
-                <h2><a href="">Projeto Caridade</a></h2>
+                <h2><a href="<?php echo INCLUDE_PATH ?>home">Projeto Caridade</a></h2>
             </div>
             <nav aria-label="Menu no esitlo de desktop" class="desktop">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Doar</a></li>
-                    <li><a href="">Entrar</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>home">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>contato">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>posts">Posts</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>">Doar</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>login">Entrar</a></li>
                 </ul>
             </nav>
 
             <nav aria-label="Menu no esitlo de celular" class="mobile">
-                <i id='menuMobileBtn' class="fas fa-bars"></i>
-                <ul id="menuMobileContent">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Doar</a></li>
-                    <li><a href="">Entrar</a></li>
+                <i class='menuMobileBtn fas fa-bars'></i>
+                <ul class="menuMobileContent">
+                    <li><a href="<?php echo INCLUDE_PATH ?>home">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>contato">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>posts">Posts</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>">Doar</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>login">Entrar</a></li>
                 </ul>
             </nav>
         </header>
@@ -74,6 +68,3 @@
           </form>
     </div>
 </section>
-
-<script src="../assets/js/jquery.min.js"></script>
-<script src="../assets/js/menuMobile.js"></script>

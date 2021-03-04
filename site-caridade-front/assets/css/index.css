@@ -94,12 +94,12 @@ header#header-home
     cursor: pointer;
 }
 
-#header-home header ul li:nth-of-type(4) a
+#header-home header ul li:nth-of-type(5) a
 {
     color:var(--red);
 }
 
-#header-home-home header ul li:nth-of-type(5) a 
+#header-home header ul li:nth-of-type(6) a 
 {
     color:var(--blue);
 }
@@ -232,4 +232,17 @@ header#header-home
 #msform .action-button:hover 
 {
     background-color: var(--gray-bg);
+}
+
+@media screen and (max-width: 860px)
+{
+    #header-home header .mobile 
+    {
+        display: block;
+    }
+
+    #header-home header .desktop 
+    {
+        display: none;
+    }
 }

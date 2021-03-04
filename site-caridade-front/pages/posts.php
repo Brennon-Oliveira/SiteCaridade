@@ -28,7 +28,7 @@
 
             <div class="posts">
                 <div class="post-single">
-                    <img alt="avatar" src="../assets/images/no-profile-img.jpg" />
+                    <img alt="avatar" src="assets/images/no-profile-img.jpg" />
                     <div class="text-post">
 
                         <h2>Cotao Jacarezão Perdoa n</h2>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="post-single">
-                    <img alt="avatar" src="../assets/images/no-profile-img.jpg" />
+                    <img alt="avatar" src="assets/images/no-profile-img.jpg" />
                     <div class="text-post">
 
                         <h2>Cotao Jacarezão Perdoa n</h2>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="post-single">
-                    <img alt="avatar" src="../assets/images/no-profile-img.jpg" />
+                    <img alt="avatar" src="assets/images/no-profile-img.jpg" />
                     <div class="text-post">
 
                         <h2>Cotao Jacarezão Perdoa n</h2>

@@ -3,11 +3,12 @@
         <div class="mapa-do-site">
             <h3>Mapa do site</h3>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Entrar</a></li><br />
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li><br />
-                <li><a href="">Doar</a></li>
+                <li><a href="<?php echo INCLUDE_PATH ?>home">Home</a></li>
+                <li><a href="<?php echo INCLUDE_PATH ?>cadastrar">Entrar</a></li><br />
+                <li><a href="<?php echo INCLUDE_PATH ?>sobre">Sobre</a></li>
+                <li><a href="<?php echo INCLUDE_PATH ?>contato">Contato</a></li><br />
+                <li><a href="<?php echo INCLUDE_PATH ?>posts">Posts</a></li>
+                <li><a href="<?php echo INCLUDE_PATH ?>">Doar</a></li><br />
             </ul>
             <div class="clear" style="clear: both;"></div>
         </div>
@@ -33,7 +34,7 @@
 
 <footer id="footer">
     <div class="container">
-        <p>© 2019-2021 Centro de Treinamento Hilbert</p>
+        <p>© 2016-<?php echo date('Y'); ?> Site de Caridade</p>
         <p><a aria-label="Lista de desenvolvedores" href="#">Conheça os desenvolvedores</a></p>
     </div>
 </footer>

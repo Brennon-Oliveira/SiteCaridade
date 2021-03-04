@@ -2,7 +2,7 @@
 <div class="container">
     <div class="grid-container">
         <div class="avatar">
-            <div><img alt="avatar" src="../assets/images/no-profile-img.jpg"/></div>
+            <div><img alt="avatar" src="assets/images/no-profile-img.jpg"/></div>
             <h4>Cotão Jacarezão</h4>
             <h5>Contribuição: R$2.0 mi</h5>
         </div>
