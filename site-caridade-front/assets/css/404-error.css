@@ -26,3 +26,11 @@ p{
     padding: 0 2%;
 }
 
+a{
+    display: inline-block !important;
+}
+
+.a{
+    float: right;
+}
+
