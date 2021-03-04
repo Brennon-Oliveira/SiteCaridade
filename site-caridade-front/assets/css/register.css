@@ -1,81 +1,84 @@
 body
 {
     background: var(--white-bg-rg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 2%;
+    width: 100%;
 }
 
-.form
+form
 {
-    margin: 0 auto;
-    padding: 20px;
-    width: 400px;
-    position: relative;
-    top: 10%;
-    height: 80%;
-    background-color: #FFFFFF;
-    background-clip: padding-box;
+    display: inline-block;
+    padding: 3.5rem 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    background-color: var(--white);
+    text-align: center;
 }
 
-.form h2
+form h2
 {
     font-weight: normal;
     color: black;
     font-size: 40px;
     font-weight: 300;    
-    margin-top: 5px;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
 .input-container
 {
     color: black;
-    margin-top: 20px;
-    margin-left: 5px;
-}
-
-.input-container span, p
-{
-    color: black;
+    display: inline-block;
+    margin-top: 1rem;
     width: 100%;
-    font-size: 19px;
-}
-
-.form a
-{
-    display: block;
-    color:  #0D5FEB;
-    font-size: 17px;
-    margin: 20px 0;
 }
 
 .input-container input
 {
-    margin-top: 8px;
     width: 100%;
     height: 42px;
-    padding: 20px;
-    border: 1px solid  black;
+    padding-left: 8px;
+    border: 1px solid var(--black);
     font-size: 18px;
 }
 
-.form .input-submit-container
+form .input-submit-container
 {
+    color: black;
+    display: inline-block;
+    margin-top: 1rem;
+    width: 100%;
     text-align: center;
-    margin-top: 24px;
 }
 
-.form input[type=submit]
+form input[type=submit]
 {
-    color: #fff;
-    font-size: 20px;
-    width: 200px;
-    height: 50px;
-    background-color: #0D5FEB;
+    color: var(--white);
+    font-size: 1.25rem;
+    max-width: 250px;
+    width: 100%;
+    height: 42px;
+    background-color: var(--blue);
     display: inline-block;
     border: 0;
     cursor: pointer;
 }
 
-.form input[type=submit]:hover
+form input[type=submit]:hover
 {
     background-color: #0a4dc2;
+}
+
+form a {
+    color: var(--blue);
+    font-size: 1rem;
+    margin-top: .25rem;
+    display: inline-block;
+}
+
+form a:hover {
+    text-decoration: underline;
 }

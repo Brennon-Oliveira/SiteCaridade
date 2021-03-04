@@ -8,20 +8,22 @@
 
 <body>
     <form>
-        <label for="name">
-            <input type="name" placeholder="Nome..." required>
+        <h2>Cadastro</h2>
+        <label for="name" class="input-container">
+            <input id="name" type="name" placeholder="Nome..." required>
         </label>
-        <label for="email">
-            <input type="email" placeholder="Nome..." required>
+        <label for="email" class="input-container">
+            <input id="email" type="email" placeholder="Email..." required>
         </label>
-        <label for="password">
-            <input type="password" placeholder="Nome..." required>
+        <label for="password" class="input-container">
+            <input id="password" type="password" placeholder="Senha..." required>
         </label>
-        <label for="password">
-            <input type="password" placeholder="Nome..." required>
+        <label for="repeatPassword" class="input-container">
+            <input id="repeatPassword" type="password" placeholder="Confirme a senha..." required>
         </label>
+        <label for="evniar" class="input-submit-container">
+            <input id="evniar" type="submit" value="Cadastrar!">
+        </label>
+        <a href="#">Já tem uma conta?</a>
     </form>
-
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/menuMobile.js"></script>
 </body>
