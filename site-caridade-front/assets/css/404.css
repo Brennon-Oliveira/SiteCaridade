@@ -1,0 +1,28 @@
+section#erro404 {
+padding: 20px;
+min-height: 470px;
+}
+section#erro404 .box-erro {
+background-color: rgba(255, 0, 0, 0.7);
+width: 100%;
+text-align: center;
+padding: 20px 2%;
+}
+section#erro404 .box-erro h2 {
+color: white;
+font-weight: lighter;
+font-size: 23px;
+}
+section#erro404 .box-erro p {
+color: white;
+font-size: 18px;
+margin-top: 15px;
+}
+section#erro404 a {
+color: red;
+text-decoration: underline;
+font-size: 15px;
+}
+section#erro404 a.left {
+float: right;
+}

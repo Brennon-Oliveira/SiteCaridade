@@ -14,6 +14,6 @@
         <label for="evniar" class="input-submit-container">
             <input id="evniar" type="submit" value="Entrar!">
         </label>
-        <a href="#">Ainda não tem uma conta?</a>
+        <a href="cadastrar">Ainda não tem uma conta?</a>
     </form>
 </div>

@@ -2,6 +2,19 @@
     include('config.php');
     $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     # verifica se a url foi alterada e salva na variavel url
+
+    if(file_exists('pages/'.$url.'.php')){
+    } else {
+        # caso não aja, detecta se é algum paramentro inPage 
+        if($url != 'sobre' && $url != 'servicos' && $url != 'contato' && $url != ''){
+            # se não for, ativa a variável $pagina404 e inclui a página de erro404;
+            $pagina404 = true;
+            $url = '404';
+        } else {
+            # se for, inclui a home do site
+            $url = 'home';
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -27,6 +40,8 @@
         echo '<link rel="stylesheet" type="text/css" href="assets/css/user.css">';
     }else if($url == 'posts'){
         echo '<link rel="stylesheet" type="text/css" href="assets/css/posts.css">';
+    } else if($url == '404') {
+        echo '<link rel="stylesheet" href="assets/css/404.css">';
     }
     ?>
     <title>Site Caridade</title>
@@ -63,15 +78,7 @@
             include('pages/'.$url.'.php');
             # caso aja, inclui esse arquivo
         } else {
-            # caso não aja, detecta se é algum paramentro inPage 
-            if($url != 'sobre' && $url != 'servicos' && $url != 'contato' && $url != ''){
-                # se não for, ativa a variável $pagina404 e inclui a página de erro404;
-                $pagina404 = true;
-                // include('pages/404.php');
-            } else {
-                # se for, inclui a home do site
-                include('pages/home.php');
-            }
+            include('pages/404.php');
         }
     ?>
     
