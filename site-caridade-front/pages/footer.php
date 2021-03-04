@@ -35,6 +35,6 @@
 <footer id="footer">
     <div class="container">
         <p>© 2016-<?php echo date('Y'); ?> Site de Caridade</p>
-        <p><a aria-label="Lista de desenvolvedores" href="#">Conheça os desenvolvedores</a></p>
+        <p><a aria-label="Lista de desenvolvedores" href="https://github.com/Brennon-Oliveira/SiteCaridade/graphs/contributors">Conheça os desenvolvedores</a></p>
     </div>
 </footer>
