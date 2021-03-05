@@ -1,0 +1,42 @@
+{
+    "name": "gusbemacbe/site-caridade-front",
+    "description": "Um projeto sem fins lucrativos de um site de caridade para as ONGs",
+    "type": "project",
+    "require": 
+    {
+        "antlur/capo-starter": "^0.1.1",
+        "coffeecode/router": "^1.0",
+        "guzzlehttp/guzzle": "dev-master",
+        "guzzlehttp/psr7": "1.x-dev",
+        "monolog/monolog": "dev-master",
+        "phpunit/phpunit": "9.5.x-dev",
+        "psr/http-message": "dev-master",
+        "symfony/filesystem": "^5.2",
+        "symfony/polyfill-mbstring": "^1.22",
+        "symfony/polyfill-php72": "^1.22",
+        "symfony/yaml": "5.2.x-dev"
+    },
+    "license": "None",
+    "authors": 
+    [
+        {
+            "name": "Brennon Gabriel de Oliveira",
+            "email": "contato@brennonaleatorio.com.br",
+            "homepage": "https://brennonaleatorio.com.br",
+            "role": "Freelance full-stack developer"
+        },
+        {
+            "name": "Daniel Pereira Barros",
+            "email": "danielbarroscotao@gmail.com",
+            "homepage": "https://github.com/Daniel-Cotao",
+            "role": "Full-stack developer and team leader"
+        },
+        {
+            "name": "Gustavo Costa",
+            "email": "gusbemacbe@gmail.com",
+            "homepage": "https://gusbemacbe.pt",
+            "role": "Full-stack developer and graphic designer"
+        }
+    ],
+    "minimum-stability": "stable"
+}
