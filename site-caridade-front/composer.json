@@ -1,22 +1,6 @@
 {
     "name": "gusbemacbe/site-caridade-front",
     "description": "Um projeto sem fins lucrativos de um site de caridade para as ONGs",
-    "type": "project",
-    "require": 
-    {
-        "antlur/capo-starter": "^0.1.1",
-        "coffeecode/router": "^1.0",
-        "guzzlehttp/guzzle": "dev-master",
-        "guzzlehttp/psr7": "1.x-dev",
-        "monolog/monolog": "dev-master",
-        "phpunit/phpunit": "9.5.x-dev",
-        "psr/http-message": "dev-master",
-        "symfony/filesystem": "^5.2",
-        "symfony/polyfill-mbstring": "^1.22",
-        "symfony/polyfill-php72": "^1.22",
-        "symfony/yaml": "5.2.x-dev"
-    },
-    "license": "None",
     "authors": 
     [
         {
@@ -38,5 +22,22 @@
             "role": "Full-stack developer and graphic designer"
         }
     ],
-    "minimum-stability": "stable"
+    "license": "None",
+    "minimum-stability": "stable",
+    "type": "project",
+    "require": 
+    {
+        "antlur/capo-starter": "^0.1",
+        "coffeecode/router": "^1.0",
+        "erandir/plug-route": "^4.0",
+        "guzzlehttp/guzzle": "dev-master",
+        "guzzlehttp/psr7": "1.x-dev",
+        "monolog/monolog": "dev-main",
+        "phpunit/phpunit": "9.5.x-dev",
+        "psr/http-message": "dev-master",
+        "symfony/filesystem": "^5.2",
+        "symfony/polyfill-mbstring": "^1.22",
+        "symfony/polyfill-php72": "^1.22",
+        "symfony/yaml": "5.2.x-dev"
+    }
 }
