@@ -1,0 +1,141 @@
+/* Daniel, não precisas colocar * e .container, porque já estão no ficheiro global.css */
+
+.grid-container
+{
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas: "search posts posts posts"
+                       "search posts posts posts"
+                       "search posts posts posts";
+  border-left: 1px solid var(--black);
+  border-right: 1px solid var(--black);
+  border-top: 1px solid var(--black);
+  height: 100%;
+}
+
+.search
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas: "search-box search-box search-box"
+                       "classify classify classify";
+  grid-area: search;
+  border-right: 1px solid var(--black);
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.search h2
+{
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.search .search-box
+{
+  grid-area: search-box;
+
+  display: grid;
+  align-content: end;
+
+  padding-bottom: 25px;
+}
+
+.search .search-box input,
+.search .classify input
+{
+  border: 1px solid black;
+  color: var(--black);
+  font-size: 18px;
+  height: 20px;
+  outline: none;
+  padding: 17px 2%;
+  width: 100%;
+}
+
+.search .search-box input:hover
+{
+  background-color: var(--light-grey);
+  transition: 0.6s;
+}
+
+.search .search-box .fontawesome 
+{ 
+    position: relative; 
+} 
+    
+.search .search-box .fontawesome button
+{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute; 
+    left: 260px; 
+    top: 10px; 
+    color: var(--black);
+    opacity: 1;
+} 
+
+.search .search-box .fontawesome button:hover
+{
+  background: transparent;
+}
+
+.search .classify
+{
+  grid-area: classify;
+  padding-top: 25px;
+}
+
+.search .classify button
+{
+  background-color: var(--black);
+  border: none;
+  color: var(--white);
+  font-size: 22px;
+  height: 38px;
+  margin-top: 20px;
+  outline: none;
+  width: 100%;
+}
+
+.posts
+{
+  grid-area: posts;
+  margin: 30px;
+}
+
+.posts .post-single
+{
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  padding: 2%;
+  width: 100%;
+}
+
+.posts .post-single img
+{
+ border-radius: 50%; 
+ border: 1px solid var(--black);
+ width: 115px; 
+}
+
+.posts .post-single .text-post
+{
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.posts .post-single .text-post h2
+{
+  margin-bottom: 20px;
+  text-align: center;
+}

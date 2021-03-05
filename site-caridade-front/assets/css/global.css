@@ -1,0 +1,313 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--fira);
+    font-weight: 300;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.container
+{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.container-min
+{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+a, button, h1, h2, h3, h4, input, p, span
+{
+    font-family: var(--fira);
+}
+
+/* BARRA DE NAVEGAÇÃO */
+#header {
+    border-bottom: 1px solid var(--black);
+}
+#header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2%;
+}
+
+#header .logo a 
+{
+    font-size: 2rem;
+    transition: font-size 1s;
+    color: var(--black);
+}
+
+#header .logo a:hover 
+{
+    font-size:2.15rem;
+}
+
+#header .desktop ul 
+{
+    display: flex;
+    align-items: center;
+}
+
+#header .desktop ul li 
+{
+    margin-left: 2rem;
+}
+
+#header .desktop ul li a 
+{
+    color: var(--black);
+    font-size: 1.5rem;
+    transition: font-size 1s;
+}
+
+#header .desktop ul li a:hover 
+{
+    font-size:1.8rem;
+}
+
+#header .mobile 
+{
+    display: none;
+}
+
+#header .mobile ul 
+{
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background: var(--gray-bg);
+}
+
+#header .mobile ul li a 
+{
+    width: 100%;
+    padding: 1.25rem 0;
+    display: inline-block;
+    border-bottom: 1px solid var(--black);
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#header .mobile ul li a:hover 
+{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#header .mobile i 
+{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#header ul li:nth-of-type(5) a
+{
+    color:var(--red);
+}
+
+#header ul li:nth-of-type(6) a 
+{
+    color:var(--blue);
+}
+
+/* RODAPÉ */
+
+#top-footer 
+{
+    background-color: var(--gray-bg);
+    padding: 40px 0;
+}
+
+#top-footer .container 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#top-footer .container > div 
+{
+    width: 33.3%;
+}
+
+#top-footer .container > div h3 
+{
+    font-size: 1.75rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+#top-footer .mapa-do-site ul li 
+{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#top-footer .mapa-do-site ul li a 
+{
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+#top-footer .mapa-do-site ul li a:hover 
+{
+    text-decoration: underline;
+}
+
+#top-footer .mapa-do-site ul li a::before
+{
+    content: '-';
+}
+
+#top-footer .redes-sociais ul li
+{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#top-footer .redes-sociais ul li a 
+{
+    color: var(--white);
+    display: inline-block;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    text-align: center;
+    line-height: 60px;
+    transition: background-color .4s, color .4s;
+}
+
+#top-footer .redes-sociais ul li a:hover 
+{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#top-footer .endereco p 
+{
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+#footer
+{
+    padding: 20px 0;
+    background-color: var(--black);
+}
+
+#footer .container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer p, 
+#footer a 
+{
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+#footer a:hover 
+{
+    text-decoration: underline;
+}
+
+@media (min-width: 1800px)
+{
+    html 
+    {
+        font-size: 140%;
+    }
+
+    #top-footer .redes-sociais ul li a 
+    {
+        height: 80px;
+        line-height: 80px;
+        width: 80px;
+    }
+}
+
+@media (min-width: 1440px)
+{
+    html 
+    {
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 1080px)
+{
+    html 
+    {
+        font-size: 93.75%;
+    }
+    
+}
+
+@media screen and (max-width: 850px)
+{
+    #top-footer >.container 
+    {
+        text-align: center;
+    }
+
+    #top-footer >.container > div
+    {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    #footer .container
+    {
+        flex-direction: column;
+    }
+
+    #footer .container p 
+    {
+        margin-bottom: 1rem;
+    }
+
+    #header .mobile 
+    {
+        display: block;
+    }
+
+    #header .desktop 
+    {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 720px)
+{
+    html 
+    {
+        font-size: 87.5%;
+    }
+}

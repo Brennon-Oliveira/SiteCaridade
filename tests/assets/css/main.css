@@ -11,6 +11,7 @@
   --white:#FFFFFF;
 }
 
+/* Daniel aqui */
 *
 {
   box-sizing: border-box;
@@ -63,6 +64,7 @@ p, span
 
 .barra-de-navegacao
 {
+  background-color: transparent;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
@@ -97,11 +99,13 @@ p, span
 
 .inicio
 {
-  background: url("../assets/images/banner.png");
+  background: url("../images/banner.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   grid-area: inicio;
+  margin-top: -70px;
+  z-index: -1;
 }
 
 .inicio .container p

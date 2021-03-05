@@ -1,0 +1,218 @@
+
+
+.avatar
+{
+  flex-direction: column;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  justify-items: center;
+  margin-top: 4%;
+}
+
+.avatar h4
+{
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.avatar img
+{
+  display: inline-block;
+  border-radius: 2em; 
+  border: 1px solid var(--black);
+  width: 8%; 
+}
+
+.perfil {
+  display: flex;
+  margin-top: 2.25rem;
+  align-items: center;
+}
+
+.perfil div {
+  width: 50%;
+}
+
+.perfil .status
+{
+  font-size: 1.5rem;
+  padding: 4% 10%;
+  text-align: left;
+}
+
+.perfil .descricao {
+  padding: 4% 0;
+}
+
+.perfil div h2
+{
+  font-size: 2.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.perfil .descricao p {
+  font-size: 1.10rem;
+  line-height: 1.25rem;
+}
+
+.perfil .status p {
+  margin-bottom: 1rem;
+}
+
+.perfil .status button
+{
+  color: white;
+  background-color: var(--red);
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  width: 162px;
+  height: 42px;
+  font-size: 1.5rem;
+  transition: filter .4s;
+}
+
+.perfil .status button:hover {
+  filter: brightness(85%);
+}
+
+@media screen and (max-width:900px){
+  .avatar img{
+    width: 15%;
+  }
+  .perfil {
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .perfil .descricao p{
+    text-align: left;
+  }
+
+  .perfil div {
+    border-top: 1px solid var(--black);
+    width: 100%;
+    text-align: center !important;
+  }
+}
+
+/* p
+{
+    line-height: 1.5;
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 0;
+  grid-template-areas: "avatar avatar avatar avatar"
+                       "perfil perfil perfil perfil";
+}
+
+.avatar
+{
+  grid-area: avatar;
+
+  align-content: baseline;
+  display: grid;
+  font-size: 32px;
+  font-weight: 300;
+  justify-items: center;
+  margin-top: 4%;
+}
+
+.avatar img
+{
+    border-radius: 2em; 
+    border: 1px solid var(--black);
+    width: 8%; 
+}
+
+.avatar h4
+{
+    padding-top: 20px;
+}
+
+.perfil
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: "descricao descricao status status";
+  grid-area: perfil;
+}
+
+.perfil .descricao h2,
+.perfil .status h2
+{
+  margin-bottom: 50px;
+}
+
+.perfil .descricao
+{
+  grid-area: descricao;
+
+  font-size: 24px;
+  padding: 4% 2%;
+}
+
+.perfil .status
+{
+  grid-area: status;
+
+  font-size: 24px;
+  padding: 4% 10%;
+  text-align: left;
+}
+
+.perfil .status h2
+{
+  list-style: none;
+}
+
+.perfil .status button
+{
+  color: white;
+  color: 24px;
+  background-color: #FF4E68;
+  border: 0;
+  cursor: pointer;
+  width: 162px;
+  height: 35px;
+  font-size: 24px;
+}
+
+@media (max-width: 1080px)
+{
+  .avatar
+  {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+  }
+
+  .descricao
+  {
+    width: 100%;
+    margin: 0 auto;
+    order: 3;
+  }
+
+  .descricao h2
+  {
+    text-align: center;
+  }
+
+  .status
+  {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+} */

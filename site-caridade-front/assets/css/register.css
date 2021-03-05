@@ -1,0 +1,86 @@
+
+.register
+{
+    background: var(--white-bg-rg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 2%;
+    width: 100%;
+    height: 100%;
+}
+
+form
+{
+    display: inline-block;
+    padding: 3.5rem 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    background-color: var(--white);
+    text-align: center;
+}
+
+form h2
+{
+    font-weight: normal;
+    color: black;
+    font-size: 40px;
+    font-weight: 300;    
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input-container
+{
+    color: black;
+    display: inline-block;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.input-container input
+{
+    width: 100%;
+    height: 42px;
+    padding-left: 8px;
+    border: 1px solid var(--black);
+    font-size: 18px;
+}
+
+form .input-submit-container
+{
+    color: black;
+    display: inline-block;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]
+{
+    color: var(--white);
+    font-size: 1.25rem;
+    max-width: 250px;
+    width: 100%;
+    height: 42px;
+    background-color: var(--blue);
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover
+{
+    background-color: #0a4dc2;
+}
+
+form a {
+    color: var(--blue);
+    font-size: 1rem;
+    margin-top: .25rem;
+    display: inline-block;
+}
+
+form a:hover {
+    text-decoration: underline;
+}

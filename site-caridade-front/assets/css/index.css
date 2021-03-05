@@ -1,0 +1,248 @@
+h2.titulo, 
+legend.titulo
+{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header#header-home 
+{
+    height:100vh;
+    width:100%;
+    background: url('../images/banner.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#header-home header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#header-home header .logo a 
+{
+    font-size: 2rem;
+    transition: font-size 1s;
+    color: var(--black);
+}
+
+#header-home header .logo a:hover 
+{
+    font-size:2.15rem;
+}
+
+#header-home header .desktop ul 
+{
+    display: flex;
+    align-items: center;
+}
+
+#header-home header .desktop ul li 
+{
+    margin-left: 2rem;
+}
+
+#header-home header .desktop ul li a 
+{
+    color: var(--black);
+    font-size: 1.5rem;
+    transition: font-size 1s;
+}
+
+#header-home header .desktop ul li a:hover 
+{
+    font-size:1.8rem;
+}
+
+#header-home header .mobile 
+{
+    display: none;
+}
+
+#header-home header .mobile ul 
+{
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background: var(--gray-bg);
+}
+
+#header-home header .mobile ul li a 
+{
+    width: 100%;
+    padding: 1.25rem 0;
+    display: inline-block;
+    border-bottom: 1px solid var(--black);
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#header-home header .mobile ul li a:hover 
+{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#header-home header .mobile i 
+{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#header-home header ul li:nth-of-type(5) a
+{
+    color:var(--red);
+}
+
+#header-home header ul li:nth-of-type(6) a 
+{
+    color:var(--blue);
+}
+
+#header-home .bannerMessage 
+{
+    width:100%;
+    text-align:center;
+    margin-top: 30vh;
+}
+
+#header-home .bannerMessage h2 
+{
+    transition: font-size 1s;
+    display: inline-block;
+    text-align:left;
+    font-size: 2rem;
+}
+
+/* SEÇÃO DE SOBRE */
+
+#sobre, #como-nos-ajudar
+{
+    display: flex;
+    background-color: var(--black);
+    width: 100%;
+    color: var(--white);
+    padding: 40px 0;
+}
+
+#sobre p, #como-nos-ajudar p
+{
+    color: var(--white-text);
+    font-size: 1.05rem;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
+}
+
+/* SEÇÃO DE AJUDA E DOAÇÃO */
+
+#como-nos-ajudar
+{
+    background: linear-gradient(#000000e3, #000000d6), url('../images/criancas.png');
+    background-position: unset, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+}
+
+#como-nos-ajudar .container-min div
+{
+    text-align: center;
+}
+
+#como-nos-ajudar .container-min div a
+{
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white-title);
+    font-size: 2rem; 
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    transition: font-size .4s, filter .4s;
+}
+
+#como-nos-ajudar .container-min div a:hover 
+{
+    filter: brightness(85%);
+    font-size: 2.25rem;
+}
+
+/* SEÇÃO DE CONTATO */
+
+#entre-em-contato 
+{
+    background-color: var(--white-bg);
+    padding: 40px 0;
+}
+
+/* FORMULÁRIO */
+
+#msform 
+{
+    text-align: center;
+	width: 100%;
+}
+
+#msform fieldset 
+{
+	border: 0;
+}
+
+#msform input:not([type=submit]), 
+#msform textarea 
+{
+	padding-left: 8px;
+    height: 42px;
+    line-height: 42px;
+	border: 1px solid var(--black);
+	border-radius: 3px;
+	margin-bottom: 1rem;
+	width: 100%;
+	font-weight: 300;
+	color: var(--black);
+    font-size: 1rem;
+}
+
+#msform textarea 
+{
+    padding: 8px;
+    min-height: 120px;
+    height: 150px;
+    max-height: 180px;
+    resize: vertical;
+    line-height: normal;
+}
+
+#msform .action-button 
+{
+	width: 300px;
+	background: var(--black);
+	color: var(--white);
+	border: 0 none;
+	border-radius: 1px;
+    font-size: 20px;
+	cursor: pointer;
+	padding: 0.80rem 2%;
+}
+
+#msform .action-button:hover 
+{
+    background-color: var(--gray-bg);
+}
+
+@media screen and (max-width: 860px)
+{
+    #header-home header .mobile 
+    {
+        display: block;
+    }
+
+    #header-home header .desktop 
+    {
+        display: none;
+    }
+}

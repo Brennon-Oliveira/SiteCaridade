@@ -1,0 +1,5 @@
+$(()=>{
+    $(".menuMobileBtn").click(()=>{
+        $(".menuMobileContent").slideToggle()
+    })
+})

@@ -1,0 +1,13 @@
+# Composer
+composer.phar
+vendor
+
+# Ficheiros sujos da Apple
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Nodejs e NPM
+node_modules
