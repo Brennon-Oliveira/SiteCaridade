@@ -10,11 +10,19 @@ use \PlugRoute\Http\RequestCreator;
 
 $route = new PlugRoute(new RouteContainer(), RequestCreator::create());
 
-$route->namespace('\\App\\Controllers', function($route) {
-    $route->get('/', '\\HomeController@index'); 
+$route->notFound(function() 
+{
+   header('Location:/404');
 });
 
-$route->namespace('\\App\\Controllers', function($route) {
+$route->namespace('\\App\\Controllers', function($route) 
+{
+    $route->get('/', '\\HomeController@index'); 
+    $route->get('/404', '\\NotFoundController@index');
+});
+
+$route->namespace('\\App\\Controllers', function($route) 
+{
     $route->post('/', '\\HomeController@create'); 
 });
 

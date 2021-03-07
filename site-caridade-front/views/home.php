@@ -1,56 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Serviço de E-mail</title>
-</head>
-<body>
-    <form method="post">
-        <div class="container">
-            <div class="row">
-            <div class="col-md-12">
-                <h1 class="d-flex justify-content-center mt-5">Formulário de E-mail</h1>
-                <div class="row">
-                    <?php if (isset($alert) && !empty($alert)): ?>
-                    <div class="col-md-12">
-                        <div class="alert alert-dismissible alert-<?= $alert['type']; ?>">
-                            <?php echo $alert['msg']; ?>
-                            <button class="close" type="button" data-dismiss="alert">x</button>
-                        </div>
-                    </div>
-                    <?php endif; ?>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">Nome:</label>
-                            <input type="text" id="nome" name="name" class="form-control" placeholder="Digite seu nome" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" required>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="message">Messagem:</label>
-                            <textarea name="message" id="message" class="form-control" cols="30" rows="10" required></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12 d-flex flex-row-reverse">
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                    </div>
-                </div>
-            </div>
-            </div>
+<?php $this->layout('template/layout', 
+                    [
+                        'css_page' => 'index',
+                        'title'=>'Projeto Caridade – Bem-vindo!'
+                    ]) 
+?>
+
+<?php $this->unshift('styles') ?>
+<?php $this->end() ?>
+
+<?php $this->start('page') ?>
+
+<header id='header-home'>
+    <div class="container">
+        <div class="bannerMessage">
+            <h2>Uma organização focada no futuro<br/>das crianças e adolecentes</h2>
         </div>
-    </form>
-    <!--formulário -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html>
+    </div>
+</header>
+
+<section id="sobre">
+    <div class="container-min">
+        <h2 class="titulo">Sobre</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices eget metus ut ultricies. Vestibulum convallis aliquam tellus ac suscipit. Maecenas luctus, ex in rhoncus scelerisque, massa lacus maximus massa, non imperdiet risus turpis id magna. Proin rhoncus eget eros quis eleifend. Donec tempus mattis dui, vitae vestibulum nisi lacinia at. Nam nec sapien pellentesque, porta massa et, vestibulum elit. Curabitur a facilisis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p>Fusce rhoncus sed ex et maximus. In hac habitasse platea dictumst. Vivamus aliquet ante eu dui scelerisque, eu ultricies nibh volutpat. Aenean fringilla risus nunc, imperdiet ornare arcu euismod vel. Nam luctus ac elit et congue. Vestibulum augue leo, sollicitudin at tellus at, tincidunt cursus tortor. Nam viverra est vel iaculis vestibulum.</p>
+    </div>
+</section>
+
+<section id="como-nos-ajudar">
+    <div class="container-min">
+        <h2 class="titulo">Como nos ajudar</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices eget metus ut ultricies. Vestibulum convallis aliquam tellus ac suscipit. Maecenas luctus, ex in rhoncus scelerisque, massa lacus maximus massa, non imperdiet risus turpis id magna. Proin rhoncus eget eros quis eleifend. Donec tempus mattis dui, vitae vestibulum nisi lacinia at. Nam nec sapien pellentesque, porta massa et, vestibulum elit. Curabitur a facilisis libero. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        
+        <p>Morbi ullamcorper, mi at dignissim faucibus, orci erat hendrerit nulla, et feugiat lacus massa quis libero. Curabitur ante dolor, vulputate et accumsan ac, rhoncus id arcu. Proin eu ipsum porttitor, porttitor ex et, aliquam sem. Sed eget cursus elit. Proin elit libero, semper pretium congue et, ullamcorper vel sem. Duis pulvinar accumsan condimentum. Donec id risus vel velit commodo sagittis. Aenean ac dolor mauris.</p>
+        
+        <div><a aria-label="Doação" href="">Doar</a></div>
+    </div>
+</section>
+
+<section id="entre-em-contato">
+    <div class="container-min">
+        <form id="msform" method="post">
+            <fieldset class="titulo">
+                <legend class='titulo'>Entre em contato</legend>
+                <label for="name"><input type="text" name="email" placeholder="Nome..." required /></label>
+                <label for="email"><input type="email" name="pass" placeholder="Email..." required /></label>
+                <label for="number"><input type="tel" name="cpass" placeholder="Telefone..." /></label>
+                <label for="message"><textarea name="message" id="message" placeholder="Mensagem..."></textarea></label>
+                <input type="submit" name="enviar" class="action-button" value="Enviar" />
+            </fieldset>
+          </form>
+    </div>
+</section>
+
+<?php $this->stop() ?>  
+<?php $this->push('scripts') ?>
+<?php $this->end() ?>

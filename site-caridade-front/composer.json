@@ -32,6 +32,7 @@
         "erandir/plug-route": "^4.0",
         "guzzlehttp/guzzle": "dev-master",
         "guzzlehttp/psr7": "1.x-dev",
+        "league/plates": "v3.x-dev",
         "monolog/monolog": "dev-main",
         "phpunit/phpunit": "9.5.x-dev",
         "psr/http-message": "dev-master",
