@@ -10,7 +10,8 @@
     font-weight: 300;
 }
 
-html, body {
+html, body 
+{
     height: 100vh;
 }
 
@@ -36,9 +37,11 @@ a, button, h1, h2, h3, h4, input, p, span
 }
 
 /* BARRA DE NAVEGAÇÃO */
-#header {
+#header 
+{
     border-bottom: 1px solid var(--black);
 }
+
 #header .container
 {
     display: flex;
@@ -155,27 +158,39 @@ a, button, h1, h2, h3, h4, input, p, span
     margin-bottom: 1rem;
 }
 
-#top-footer .mapa-do-site ul li 
+#top-footer .mapa-do-site .grupos-de-mapa 
 {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "lista-1 lista-2";
+    grid-area: grupos-de-mapa;
+}
+
+#top-footer .mapa-do-site .grupos-de-mapa .lista-1 { grid-area: lista-1; }
+#top-footer .mapa-do-site .grupos-de-mapa .lista-2 { grid-area: lista-2; }
+
+#top-footer .mapa-do-site .grupos-de-mapa ul li 
+{
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
 
-#top-footer .mapa-do-site ul li a 
+#top-footer .mapa-do-site .grupos-de-mapa ul li a 
 {
     font-size: 1.25rem;
     color: var(--white);
 }
 
-#top-footer .mapa-do-site ul li a:hover 
+#top-footer .mapa-do-site .grupos-de-mapa ul li a:hover 
 {
     text-decoration: underline;
 }
 
-#top-footer .mapa-do-site ul li a::before
+#top-footer .mapa-do-site .grupos-de-mapa ul li a::before
 {
-    content: '-';
+    content: '- ';
 }
 
 #top-footer .redes-sociais ul li

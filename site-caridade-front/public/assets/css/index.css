@@ -6,7 +6,14 @@ legend.titulo
     text-align: center;
 }
 
-header#header-home 
+#header 
+{
+    border-bottom: none;
+    background-color: transparent;
+    margin-bottom: -65px;
+}
+
+#header-home 
 {
     height:100vh;
     width:100%;
@@ -14,101 +21,11 @@ header#header-home
     background-size: 100% 100%;
 }
 
-#header-home header 
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-#header-home header .logo a 
-{
-    font-size: 2rem;
-    transition: font-size 1s;
-    color: var(--black);
-}
-
-#header-home header .logo a:hover 
-{
-    font-size:2.15rem;
-}
-
-#header-home header .desktop ul 
-{
-    display: flex;
-    align-items: center;
-}
-
-#header-home header .desktop ul li 
-{
-    margin-left: 2rem;
-}
-
-#header-home header .desktop ul li a 
-{
-    color: var(--black);
-    font-size: 1.5rem;
-    transition: font-size 1s;
-}
-
-#header-home header .desktop ul li a:hover 
-{
-    font-size:1.8rem;
-}
-
-#header-home header .mobile 
-{
-    display: none;
-}
-
-#header-home header .mobile ul 
-{
-    display: none;
-    position: absolute;
-    top: 4rem;
-    left: 0;
-    width: 100%;
-    background: var(--gray-bg);
-}
-
-#header-home header .mobile ul li a 
-{
-    width: 100%;
-    padding: 1.25rem 0;
-    display: inline-block;
-    border-bottom: 1px solid var(--black);
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
-}
-
-#header-home header .mobile ul li a:hover 
-{
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#header-home header .mobile i 
-{
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-#header-home header ul li:nth-of-type(5) a
-{
-    color:var(--red);
-}
-
-#header-home header ul li:nth-of-type(6) a 
-{
-    color:var(--blue);
-}
-
 #header-home .bannerMessage 
 {
-    width:100%;
-    text-align:center;
-    margin-top: 30vh;
+    padding-top: 35vh;
+    text-align: center;
+    width: 100%;
 }
 
 #header-home .bannerMessage h2 
@@ -232,17 +149,4 @@ header#header-home
 #msform .action-button:hover 
 {
     background-color: var(--gray-bg);
-}
-
-@media screen and (max-width: 860px)
-{
-    #header-home header .mobile 
-    {
-        display: block;
-    }
-
-    #header-home header .desktop 
-    {
-        display: none;
-    }
 }
