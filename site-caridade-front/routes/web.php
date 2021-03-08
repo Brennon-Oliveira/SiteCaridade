@@ -19,6 +19,7 @@ $route->namespace('\\App\\Controllers', function($route)
 {
     $route->get('/', '\\HomeController@index'); 
     $route->get('/404', '\\NotFoundController@index');
+    $route->get('/login', '\\LoginController@index');
     $route->get('/posts', '\\PostsController@index');
     $route->get('/register', '\\RegisterController@index');
 });
