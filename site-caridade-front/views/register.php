@@ -1,3 +1,14 @@
+<?php $this->layout('template/layout', 
+                    [
+                        'css_page' => 'register',
+                        'title'=>'Projeto Caridade – Cadastro'
+                    ]) 
+?>
+
+<?php $this->unshift('styles') ?>
+<?php $this->end() ?>
+<?php $this->start('page') ?>
+
 <div class="register">
     <form>
         <h2>Cadastro</h2>
@@ -19,3 +30,7 @@
         <a href="login">Já tem uma conta?</a>
     </form>
 </div>
+
+<?php $this->stop() ?>
+<?php $this->push('scripts') ?>
+<?php $this->end() ?>
