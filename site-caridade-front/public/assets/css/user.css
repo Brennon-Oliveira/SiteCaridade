@@ -1,5 +1,3 @@
-
-
 .avatar
 {
   flex-direction: column;
@@ -13,25 +11,27 @@
 
 .avatar h4
 {
-    padding-top: 1.5rem;
-    padding-bottom: .5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .avatar img
 {
   display: inline-block;
-  border-radius: 2em; 
+  border-radius: 2em;
   border: 1px solid var(--black);
-  width: 8%; 
+  width: 8%;
 }
 
-.perfil {
+.perfil
+{
   display: flex;
   margin-top: 2.25rem;
   align-items: center;
 }
 
-.perfil div {
+.perfil div
+{
   width: 50%;
 }
 
@@ -42,7 +42,8 @@
   text-align: left;
 }
 
-.perfil .descricao {
+.perfil .descricao
+{
   padding: 4% 0;
 }
 
@@ -52,12 +53,14 @@
   margin-bottom: 1.75rem;
 }
 
-.perfil .descricao p {
+.perfil .descricao p
+{
   font-size: 1.10rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
 }
 
-.perfil .status p {
+.perfil .status p
+{
   margin-bottom: 1rem;
 }
 
@@ -71,148 +74,37 @@
   width: 162px;
   height: 42px;
   font-size: 1.5rem;
-  transition: filter .4s;
+  transition: filter 0.4s;
 }
 
-.perfil .status button:hover {
+.perfil .status button:hover
+{
   filter: brightness(85%);
 }
 
-@media screen and (max-width:900px){
-  .avatar img{
+@media screen and (max-width: 900px)
+{
+  .avatar img
+  {
     width: 15%;
   }
-  .perfil {
+
+  .perfil
+  {
     flex-direction: column-reverse;
     width: 100%;
     text-align: center;
   }
-  
-  .perfil .descricao p{
+
+  .perfil .descricao p
+  {
     text-align: left;
   }
 
-  .perfil div {
+  .perfil div
+  {
     border-top: 1px solid var(--black);
     width: 100%;
     text-align: center !important;
   }
 }
-
-/* p
-{
-    line-height: 1.5;
-}
-
-.grid-container
-{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 0 0;
-  grid-template-areas: "avatar avatar avatar avatar"
-                       "perfil perfil perfil perfil";
-}
-
-.avatar
-{
-  grid-area: avatar;
-
-  align-content: baseline;
-  display: grid;
-  font-size: 32px;
-  font-weight: 300;
-  justify-items: center;
-  margin-top: 4%;
-}
-
-.avatar img
-{
-    border-radius: 2em; 
-    border: 1px solid var(--black);
-    width: 8%; 
-}
-
-.avatar h4
-{
-    padding-top: 20px;
-}
-
-.perfil
-{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0 0;
-  grid-template-areas: "descricao descricao status status";
-  grid-area: perfil;
-}
-
-.perfil .descricao h2,
-.perfil .status h2
-{
-  margin-bottom: 50px;
-}
-
-.perfil .descricao
-{
-  grid-area: descricao;
-
-  font-size: 24px;
-  padding: 4% 2%;
-}
-
-.perfil .status
-{
-  grid-area: status;
-
-  font-size: 24px;
-  padding: 4% 10%;
-  text-align: left;
-}
-
-.perfil .status h2
-{
-  list-style: none;
-}
-
-.perfil .status button
-{
-  color: white;
-  color: 24px;
-  background-color: #FF4E68;
-  border: 0;
-  cursor: pointer;
-  width: 162px;
-  height: 35px;
-  font-size: 24px;
-}
-
-@media (max-width: 1080px)
-{
-  .avatar
-  {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 20px;
-  }
-
-  .descricao
-  {
-    width: 100%;
-    margin: 0 auto;
-    order: 3;
-  }
-
-  .descricao h2
-  {
-    text-align: center;
-  }
-
-  .status
-  {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-} */

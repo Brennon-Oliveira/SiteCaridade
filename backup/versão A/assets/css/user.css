@@ -105,44 +105,4 @@ h2
   {
     font-size: 87.5%;
   }
-
-  #header
-  {
-    background-size: auto 100%;
-    min-height: 500px;
-  }
-}
-
-@media (min-width: 1800px)
-{
-  #top-footer .redes-sociais ul li a
-  {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-  }
-}
-
-@media screen and (max-width: 850px)
-{
-  #top-footer> .container
-  {
-    text-align: center;
-  }
-
-  #top-footer> .container> div
-  {
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-
-  #footer .container
-  {
-    flex-direction: column;
-  }
-
-  #footer .container p
-  {
-    margin-bottom: 1rem;
-  }
 }
