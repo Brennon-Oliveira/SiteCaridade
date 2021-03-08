@@ -1,28 +1,57 @@
-section#erro404 {
-padding: 20px;
-min-height: 470px;
+.grid-container 
+{
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr 1.7fr 0.3fr;
+  grid-template-rows: 0.3fr 1fr auto 0.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    ". erro erro ."
+    ". return report ."
+    ". . . .";
 }
-section#erro404 .box-erro {
-background-color: rgba(255, 0, 0, 0.7);
-width: 100%;
-text-align: center;
-padding: 20px 2%;
+
+[class="404"]
+{ 
+  grid-area: erro; 
+
+  background-color: var(--red);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.8;
+  padding: 20px 2%;
 }
-section#erro404 .box-erro h2 {
-color: white;
-font-weight: lighter;
-font-size: 23px;
+
+[class="404"] h1, [class="404"] h2
+{
+  font-weight: bold;
 }
-section#erro404 .box-erro p {
-color: white;
-font-size: 18px;
-margin-top: 15px;
+
+.return, .report
+{
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
-section#erro404 a {
-color: red;
-text-decoration: underline;
-font-size: 15px;
+
+.return, .report a
+{
+  color: var(--red);
 }
-section#erro404 a.left {
-float: right;
+
+.return, .report a:hover
+.return, .report a:visited
+{
+  color: var(--gray-bg);
+}
+
+.return 
+{ 
+  grid-area: return; 
+}
+
+.report 
+{ 
+  grid-area: report; 
+  text-align: right;
 }

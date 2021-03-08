@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/global.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/<?=$this->e($css_page)?>.css">
     <?=$this->section('styles')?>
-    <title><?=$this->e($title)?></title>
+<title><?=$this->e($title)?></title>
 </head>
 
 <body>
