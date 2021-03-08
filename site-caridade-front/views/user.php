@@ -1,3 +1,13 @@
+<?php $this->layout('template/layout', 
+                    [
+                        'css_page' => 'user',
+                        'title'=>'Projeto Caridade – Perfil do usuário'
+                    ]) 
+?>
+
+<?php $this->unshift('styles') ?>
+<?php $this->end() ?>
+<?php $this->start('page') ?>
 
 <div class="container">
     <div class="grid-container">
@@ -15,11 +25,15 @@
             <div class="status">
                 <h2>Status:</h2>
                 <p>Curtidas: 437</p>
-                <p>Primeira Contribuição: 20/12/2020</p>
-                <p>Ultima contribuição: 20/01/2021</p>
-                <p>User id: 763467</p>
+                <p>Primeira contribuição: 20/12/2020</p>
+                <p>Última contribuição: 20/01/2021</p>
+                <p>ID do usuário: 763467</p>
                 <button>Curtir</button>
             </div>
         </div>
     </div>
 </div>
+
+<?php $this->stop() ?>
+<?php $this->push('scripts') ?>
+<?php $this->end() ?>

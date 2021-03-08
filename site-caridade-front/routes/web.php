@@ -22,6 +22,7 @@ $route->namespace('\\App\\Controllers', function($route)
     $route->get('/login', '\\LoginController@index');
     $route->get('/posts', '\\PostsController@index');
     $route->get('/register', '\\RegisterController@index');
+    $route->get('/user', '\\UserController@index');
 });
 
 $route->namespace('\\App\\Controllers', function($route) 
