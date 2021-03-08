@@ -11,7 +11,7 @@
                        "search posts posts posts";
   border-left: 1px solid var(--black);
   border-right: 1px solid var(--black);
-  border-top: 1px solid var(--black);
+  /* border-top: 1px solid var(--black); */
   height: 100%;
 }
 
