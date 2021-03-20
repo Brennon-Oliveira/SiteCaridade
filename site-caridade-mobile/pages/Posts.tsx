@@ -1,13 +1,15 @@
 import React from 'react';
 import { Button, Text, View } from "react-native"
 
+interface props{
+    navigation: {navigate:(args?: String)=>void},
+}
 
-export default ({navigation})=>{
+export default ({navigation}:props)=>{
 
     return(
         <View>
             <Text>Ola dos Posts</Text>
-            <Button title="Posts" onPress={()=>{navigation.navigate('Home')}}></Button>
         </View>
     )
 }
