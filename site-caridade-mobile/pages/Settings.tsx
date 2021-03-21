@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Text, View } from "react-native"
+import { ScrollView } from "react-native";
+import Constants from 'expo-constants';
 
 interface props{
     navigation: {navigate:(args?: String)=>void},
@@ -8,8 +9,8 @@ interface props{
 export default ({navigation} : props)=>{
 
     return(
-        <View>
-            <Text>Ola do Settings</Text>
-        </View>
+        <ScrollView style={{marginTop:Constants.statusBarHeight}}>
+            
+        </ScrollView>
     )
 }

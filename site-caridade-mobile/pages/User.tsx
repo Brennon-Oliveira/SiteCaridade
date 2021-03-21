@@ -1,5 +1,7 @@
 import React from 'react';
-import { Button, Text, View } from "react-native"
+import { ScrollView, Text } from "react-native";
+import Perfil from '../components/Perfil';
+import Color from '../assets/color';
 
 interface props{
     navigation: {navigate:(args?: String)=>void},
@@ -8,8 +10,8 @@ interface props{
 export default ({navigation} : props)=>{
 
     return(
-        <View>
-            <Text>Ola da User</Text>
-        </View>
+        <ScrollView style={{backgroundColor:Color.white}}>
+            <Perfil/>
+        </ScrollView>
     )
 }
