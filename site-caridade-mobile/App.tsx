@@ -1,20 +1,33 @@
-import React from 'react';
-import { Button, ScrollView, Text, View } from 'react-native';
+import React, { useState } from 'react';
 import Constants from 'expo-constants';
 import {StatusBar} from 'expo-status-bar';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, useRoute } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Feather ,Ionicons, Entypo, AntDesign } from '@expo/vector-icons';
+import { Feather , Entypo, AntDesign } from '@expo/vector-icons';
+import { useFonts } from 'expo-font';
 import Home from './pages/Home';
 import Posts from './pages/Posts';
 import User from './pages/User';
 import Settings from './pages/Settings';
+import Color from './assets/color';
+import { Text } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
 export default function App(){
-  return (
-    <NavigationContainer>
+
+  const [loaded] = useFonts({
+    FiraSans: require('./assets/fonts/FiraSans/firasans-light.ttf'),
+    OpenSans: require('./assets/fonts/OpenSans/opensans-light.ttf'),
+  });
+  
+  if (!loaded) {
+    return null;
+  }
+
+  return(
+    <NavigationContainer> 
+      <StatusBar translucent/>
       <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
@@ -39,6 +52,7 @@ export default function App(){
           paddingTop:10,
           paddingBottom:10,
           height:70,
+          borderTopColor:'#2B2E32'
         }
       }}
       >
@@ -47,7 +61,7 @@ export default function App(){
         <Tab.Screen name="User" component={User} />
         <Tab.Screen name="Settings" component={Settings} />
       </Tab.Navigator>
-      <StatusBar hidden />
+      
     </NavigationContainer>
-  );
+  )
 }
