@@ -9,8 +9,7 @@ import Home from './pages/Home';
 import Posts from './pages/Posts';
 import User from './pages/User';
 import Settings from './pages/Settings';
-import Color from './assets/color';
-import { Text } from 'react-native';
+import { ColorsProvider } from './contexts/ColorContext';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,42 +25,44 @@ export default function App(){
   }
 
   return(
-    <NavigationContainer> 
-      <StatusBar translucent/>
-      <Tab.Navigator
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, color, size }) => {
-          if (route.name === 'Home') {
-            return <Entypo name="home" size={size} color={color} />;
-          } else if (route.name === 'Posts') {
-            return <Feather name="globe" size={size} color={color} />;
-          } else if (route.name === 'User') {
-            return <AntDesign name="user" size={size} color={color} />;
-          } else if (route.name === 'Settings') {
-            return <AntDesign name="setting" size={size} color={color} />;
-          }
-        },
+    <ColorsProvider>
+      <NavigationContainer> 
         
-      })}
-      tabBarOptions={{
-        activeTintColor: '#FF4E68',
-        inactiveTintColor: '#ffffff',
-        showLabel:true,
-        style:{
-          backgroundColor:'#2B2E32',
-          paddingTop:10,
-          paddingBottom:10,
-          height:70,
-          borderTopColor:'#2B2E32'
-        }
-      }}
-      >
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Posts" component={Posts} />
-        <Tab.Screen name="User" component={User} />
-        <Tab.Screen name="Settings" component={Settings} />
-      </Tab.Navigator>
-      
-    </NavigationContainer>
+        <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, color, size }) => {
+            if (route.name === 'Home') {
+              return <Entypo name="home" size={size} color={color} />;
+            } else if (route.name === 'Posts') {
+              return <Feather name="globe" size={size} color={color} />;
+            } else if (route.name === 'User') {
+              return <AntDesign name="user" size={size} color={color} />;
+            } else if (route.name === 'Settings') {
+              return <AntDesign name="setting" size={size} color={color} />;
+            }
+          },
+          
+        })}
+        tabBarOptions={{
+          activeTintColor: '#FF4E68',
+          inactiveTintColor: '#ffffff',
+          showLabel:true,
+          style:{
+            backgroundColor:'#2B2E32',
+            paddingTop:10,
+            paddingBottom:10,
+            height:70,
+            borderTopColor:'#2B2E32'
+          }
+        }}
+        >
+          <Tab.Screen name="Home" component={Home} />
+          <Tab.Screen name="Posts" component={Posts} />
+          <Tab.Screen name="User" component={User} />
+          <Tab.Screen name="Settings" component={Settings} />
+        </Tab.Navigator>
+        
+      </NavigationContainer>
+    </ColorsProvider>
   )
 }

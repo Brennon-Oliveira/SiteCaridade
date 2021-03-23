@@ -1,7 +1,6 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 import { useWindowDimensions } from 'react-native';
-import Color from '../../assets/color';
 import Constants from 'expo-constants';
 
 export default ()=>{

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { ScrollView, Text } from "react-native";
 import Perfil from '../components/Perfil';
-import Color from '../assets/color';
+import { ColorsContext } from '../contexts/ColorContext';
 
 interface props{
     navigation: {navigate:(args?: String)=>void},
@@ -9,8 +9,10 @@ interface props{
 
 export default ({navigation} : props)=>{
 
+    const {white} = useContext(ColorsContext);
+
     return(
-        <ScrollView style={{backgroundColor:Color.white}}>
+        <ScrollView style={{backgroundColor:white.toString()}}>
             <Perfil/>
         </ScrollView>
     )
