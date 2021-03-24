@@ -9,7 +9,7 @@ export default () => {
 
     return (
         <View style={{ paddingTop: 10, alignItems: 'center', marginTop: Constants.statusBarHeight }}>
-            <View style={{ ...styles.userImage }}></View>
+            <View style={{ ...styles.userImage,borderColor:black.toString() }}></View>
             <Text style={{ ...styles.userName, color:black.toString() }}>Nome do Usuário</Text>
             <Text style={{...styles.userContribution, color:black.toString()}}>Contribuição: R$2.402,50</Text>
             <View style={{...styles.bar,backgroundColor:black.toString()}}></View>
@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
         height: 70,
         borderRadius: 70,
         backgroundColor: '#C4C4C4',
+        borderWidth:1,
     },
     userName: {
         fontFamily: 'FiraSans',

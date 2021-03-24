@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         paddingVertical:5,
         textAlign:'center',
         width:200,
-        marginTop:10
+        marginTop:10,
     },
     bar:{
         width:'100%',
