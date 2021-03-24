@@ -15,6 +15,7 @@ interface ColorsContextData {
     black: String,
     white: String,
     red: String,
+    green: String,
 }
 
 export function ColorsProvider({
@@ -31,14 +32,16 @@ export function ColorsProvider({
     var Color = {
         black: '#0C0C0C',
         white: '#FAF7FF',
-        red: '#FF4E68'
+        red: '#FF4E68',
+        green: '#00AC55',
     }
 
     if(darkMode){
         Color = {
             black: '#FAF7FF',
             white: '#0C0C0C',
-            red:'#FF4E68'
+            red:'#FF4E68',
+            green: '#00AC55',
         }
     }
 

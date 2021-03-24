@@ -36,13 +36,15 @@ function ColorsProvider(_a) {
     var Color = {
         black: '#0C0C0C',
         white: '#FAF7FF',
-        red: '#FF4E68'
+        red: '#FF4E68',
+        green: '#00AC55'
     };
     if (darkMode) {
         Color = {
             black: '#FAF7FF',
             white: '#0C0C0C',
-            red: '#FF4E68'
+            red: '#FF4E68',
+            green: '#00AC55'
         };
     }
     return (react_2["default"].createElement(exports.ColorsContext.Provider, { value: __assign({ darkMode: darkMode,
