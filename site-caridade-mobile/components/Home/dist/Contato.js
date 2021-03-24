@@ -58,7 +58,7 @@ var styles = react_native_1.StyleSheet.create({
     },
     buttomText: {
         backgroundColor: '#0c0c0c',
-        color: '#fff',
+        color: '#FAF7FF',
         fontSize: 20,
         fontFamily: 'FiraSans',
         paddingVertical: 5,

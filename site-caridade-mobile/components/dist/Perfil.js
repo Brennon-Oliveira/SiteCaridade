@@ -16,12 +16,12 @@ var react_native_1 = require("react-native");
 var expo_constants_1 = require("expo-constants");
 var ColorContext_1 = require("../contexts/ColorContext");
 exports["default"] = (function () {
-    var _a = react_1.useContext(ColorContext_1.ColorsContext), changeDarkMode = _a.changeDarkMode, black = _a.black, white = _a.white;
-    return (react_1["default"].createElement(react_native_1.View, { style: { paddingVertical: 10, alignItems: 'center', marginTop: expo_constants_1["default"].statusBarHeight } },
+    var _a = react_1.useContext(ColorContext_1.ColorsContext), black = _a.black, white = _a.white;
+    return (react_1["default"].createElement(react_native_1.View, { style: { paddingTop: 10, alignItems: 'center', marginTop: expo_constants_1["default"].statusBarHeight } },
         react_1["default"].createElement(react_native_1.View, { style: __assign({}, styles.userImage) }),
         react_1["default"].createElement(react_native_1.Text, { style: __assign(__assign({}, styles.userName), { color: black.toString() }) }, "Nome do Usu\u00E1rio"),
         react_1["default"].createElement(react_native_1.Text, { style: __assign(__assign({}, styles.userContribution), { color: black.toString() }) }, "Contribui\u00E7\u00E3o: R$2.402,50"),
-        react_1["default"].createElement(react_native_1.Button, { title: 'trocar', onPress: changeDarkMode })));
+        react_1["default"].createElement(react_native_1.View, { style: __assign(__assign({}, styles.bar), { backgroundColor: black.toString() }) })));
 });
 var styles = react_native_1.StyleSheet.create({
     userImage: {
@@ -38,5 +38,10 @@ var styles = react_native_1.StyleSheet.create({
     userContribution: {
         fontSize: 18,
         fontFamily: 'FiraSans'
+    },
+    bar: {
+        width: '100%',
+        height: 2,
+        marginVertical: 15
     }
 });

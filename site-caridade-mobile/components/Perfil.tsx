@@ -5,14 +5,14 @@ import { ColorsContext } from '../contexts/ColorContext';
 
 export default () => {
 
-    const {changeDarkMode, black, white} = useContext(ColorsContext);
+    const { black, white} = useContext(ColorsContext);
 
     return (
-        <View style={{ paddingVertical: 10, alignItems: 'center', marginTop: Constants.statusBarHeight }}>
+        <View style={{ paddingTop: 10, alignItems: 'center', marginTop: Constants.statusBarHeight }}>
             <View style={{ ...styles.userImage }}></View>
             <Text style={{ ...styles.userName, color:black.toString() }}>Nome do Usuário</Text>
             <Text style={{...styles.userContribution, color:black.toString()}}>Contribuição: R$2.402,50</Text>
-            <Button title='trocar' onPress={changeDarkMode}/>
+            <View style={{...styles.bar,backgroundColor:black.toString()}}></View>
         </View>
     )
 }
@@ -32,5 +32,10 @@ const styles = StyleSheet.create({
     userContribution: {
         fontSize: 18,
         fontFamily: 'FiraSans'
-    }
+    },
+    bar:{
+        width:'100%',
+        height:2,
+        marginVertical:15
+    },
 })

@@ -14,6 +14,7 @@ interface ColorsContextData {
     changeDarkMode: ()=>void,
     black: String,
     white: String,
+    red: String,
 }
 
 export function ColorsProvider({
@@ -29,13 +30,15 @@ export function ColorsProvider({
 
     var Color = {
         black: '#0C0C0C',
-        white: '#FAF7FF'
+        white: '#FAF7FF',
+        red: '#FF4E68'
     }
 
     if(darkMode){
         Color = {
             black: '#FAF7FF',
-            white: '#0C0C0C'
+            white: '#0C0C0C',
+            red:'#FF4E68'
         }
     }
 

@@ -1,6 +1,7 @@
-import React from 'react';
-import { ScrollView } from "react-native";
+import React, { useContext } from 'react';
+import { ScrollView, Text } from "react-native";
 import Constants from 'expo-constants';
+import { ColorsContext } from '../contexts/ColorContext';
 
 interface props{
     navigation: {navigate:(args?: String)=>void},
@@ -8,9 +9,11 @@ interface props{
 
 export default ({navigation}:props)=>{
 
+    const {white} = useContext(ColorsContext);
+
     return(
-        <ScrollView style={{marginTop:Constants.statusBarHeight}}>
-            
+        <ScrollView style={{backgroundColor:white.toString()}}>
+            <Text style={{marginTop:Constants.statusBarHeight}}></Text>
         </ScrollView>
     )
 }
